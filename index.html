@@ -1,0 +1,2058 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="css/home-page-1-4.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://animaapp.s3.amazonaws.com/launchpad-static/launchpad.js"></script>
+    <style>
+      @font-face {
+        font-family: "Bodoni72-Book";
+        font-style: normal;
+        font-weight: 400;
+        src: url("https://anima-uploads.s3.amazonaws.com/projects/5fb43696712a716336b044aa/files/typoringdemobold-rg4gp.ttf")
+          format("truetype");
+      }
+
+      @font-face {
+        font-family: "HoeflerText-Regular";
+        font-style: normal;
+        font-weight: 400;
+        src: url("https://anima-uploads.s3.amazonaws.com/projects/604fb869c2ec7cfd511e7af3/fonts/hoefler-text-regular.ttf")
+          format("truetype");
+      }
+
+      .component-wrapper a,
+      .screen a {
+        text-decoration: none;
+        display: contents;
+      }
+
+      .full-width-a {
+        width: 100%;
+      }
+
+      .full-height-a {
+        height: 100%;
+      }
+
+      .screen textarea:focus,
+      .screen input:focus {
+        outline: none;
+      }
+
+      .screen *,
+      .component-wrapper * {
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .screen div {
+        -webkit-text-size-adjust: none;
+      }
+
+      .container-center-vertical,
+      .container-center-horizontal {
+        pointer-events: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+      }
+
+      .container-center-vertical {
+        align-items: center;
+        height: 100%;
+      }
+
+      .container-center-horizontal {
+        justify-content: center;
+        width: 100%;
+      }
+
+      .container-center-vertical > *,
+      .container-center-horizontal > * {
+        pointer-events: auto;
+        flex-shrink: 0;
+      }
+
+      .component-wrapper,
+      .screen {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all;
+        word-break: break-word;
+      }
+
+      .auto-animated div {
+        opacity: 0;
+        position: absolute;
+        --z-index: -1;
+      }
+
+      .auto-animated .container-center-vertical,
+      .auto-animated .container-center-horizontal {
+        opacity: 1;
+      }
+
+      .overlay {
+        position: absolute;
+        opacity: 0;
+        display: none;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+      }
+
+      .animate-appear {
+        opacity: 0;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 normal forwards;
+      }
+
+      .animate-disappear {
+        opacity: 1;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 reverse forwards;
+      }
+
+      .animate-nodelay {
+        animation-delay: 0s;
+      }
+
+      @keyframes reveal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .align-self-flex-start {
+        align-self: flex-start;
+      }
+      .align-self-flex-end {
+        align-self: flex-end;
+      }
+      .align-self-flex-center {
+        align-self: center;
+      }
+      .valign-text-middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .valign-text-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      input:focus {
+        outline: none;
+      }
+      .component-wrapper,
+      .component-wrapper * {
+        pointer-events: none;
+      }
+
+      .component-wrapper a *,
+      .component-wrapper a,
+      .component-wrapper input,
+      .component-wrapper video,
+      .component-wrapper iframe,
+      .listeners-active,
+      .listeners-active * {
+        pointer-events: auto;
+      }
+
+      .hidden,
+      .hidden * {
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      .smart-layers-pointers,
+      .smart-layers-pointers * {
+        pointer-events: auto;
+        visibility: visible;
+      }
+
+      .component-wrapper.not-ready,
+      .component-wrapper.not-ready * {
+        visibility: hidden !important;
+      }
+
+      .listeners-active-click,
+      .listeners-active-click * {
+        cursor: pointer;
+      }
+    </style>
+    <meta name="author" content="AnimaApp.com - Design to code, Automated." />
+  </head>
+  <body style="margin: 0; background: rgba(255, 255, 255, 1)">
+    <input type="hidden" id="anPageName" name="page" value="home-page-1-4" />
+    <div class="home-page-1-2 screen smart-layers-pointers">
+      <div class="component-33-1-C61RwL">
+        <div class="rotato-snapshot-wNNOps">
+          <img class="rotato-snapshot-iVgOVn" src="img/rotato-snapshot-1@1x.png" />
+        </div>
+        <div class="rotato-snapshot-2-wNNOps">
+          <div class="rotato-snapshot-2-Y3rZpU">
+            <img class="rotato-snapshot-2-B5stlr" src="img/rotato-snapshot-2-1@1x.png" />
+          </div>
+        </div>
+        <div class="rotato-snapshot-4-wNNOps">
+          <div class="rotato-snapshot-4-uEGenx">
+            <img class="rotato-snapshot-4-b5XBsx" src="img/rotato-snapshot-4-1@1x.png" />
+          </div>
+        </div>
+        <div class="rotato-snapshot-6-wNNOps">
+          <div class="rotato-snapshot-6-pA84sW">
+            <img class="rotato-snapshot-6-pyN0MH" src="img/rotato-snapshot-6-1@1x.png" />
+          </div>
+        </div>
+      </div>
+      <div class="david-C61RwL"></div>
+      <div class="repeat-grid-1-C61RwL smart-layers-pointers">
+        <div class="x0-mrdmCX"><img class="path-2-FCfPAI" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1-mrdmCX"><img class="path-2-OfQnN0" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2-mrdmCX"><img class="path-2-7mD736" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3-mrdmCX"><img class="path-2-PoHmFY" src="img/path-2-1000@1x.png" /></div>
+        <div class="x4-mrdmCX"><img class="path-2-vMzTxV" src="img/path-2-1000@1x.png" /></div>
+        <div class="x5-mrdmCX"><img class="path-2-9PNV7a" src="img/path-2-1000@1x.png" /></div>
+        <div class="x6-mrdmCX"><img class="path-2-jHpxnM" src="img/path-2-1000@1x.png" /></div>
+        <div class="x7-mrdmCX"><img class="path-2-Wk6AtN" src="img/path-2-1000@1x.png" /></div>
+        <div class="x8-mrdmCX"><img class="path-2-NcxKA2" src="img/path-2-1000@1x.png" /></div>
+        <div class="x9-mrdmCX"><img class="path-2-xkQFlq" src="img/path-2-1000@1x.png" /></div>
+        <div class="x10-mrdmCX"><img class="path-2-x5f5I8" src="img/path-2-1000@1x.png" /></div>
+        <div class="x11-mrdmCX"><img class="path-2-P9XJKp" src="img/path-2-1000@1x.png" /></div>
+        <div class="x12-mrdmCX"><img class="path-2-JhsY7M" src="img/path-2-1000@1x.png" /></div>
+        <div class="x13-mrdmCX"><img class="path-2-SixsPY" src="img/path-2-1000@1x.png" /></div>
+        <div class="x14-mrdmCX"><img class="path-2-qrqW1z" src="img/path-2-1000@1x.png" /></div>
+        <div class="x15-mrdmCX"><img class="path-2-Ut5xno" src="img/path-2-1000@1x.png" /></div>
+        <div class="x16-mrdmCX"><img class="path-2-UMVjnA" src="img/path-2-1000@1x.png" /></div>
+        <div class="x17-mrdmCX"><img class="path-2-6cFtgN" src="img/path-2-1000@1x.png" /></div>
+        <div class="x18-mrdmCX"><img class="path-2-4T1NrT" src="img/path-2-1000@1x.png" /></div>
+        <div class="x19-mrdmCX"><img class="path-2-AwzVO2" src="img/path-2-1000@1x.png" /></div>
+        <div class="x20-mrdmCX"><img class="path-2-toxCWx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x21-mrdmCX"><img class="path-2-kxddeU" src="img/path-2-1000@1x.png" /></div>
+        <div class="x22-mrdmCX"><img class="path-2-KFB8AK" src="img/path-2-1000@1x.png" /></div>
+        <div class="x23-mrdmCX"><img class="path-2-M9enNP" src="img/path-2-1000@1x.png" /></div>
+        <div class="x24-mrdmCX"><img class="path-2-uCx4uw" src="img/path-2-1000@1x.png" /></div>
+        <div class="x25-mrdmCX"><img class="path-2-DAWxWH" src="img/path-2-1000@1x.png" /></div>
+        <div class="x26-mrdmCX"><img class="path-2-VP7J9m" src="img/path-2-1000@1x.png" /></div>
+        <div class="x27-mrdmCX"><img class="path-2-BomilQ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x28-mrdmCX"><img class="path-2-9oIBdZ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x29-mrdmCX"><img class="path-2-xQ043M" src="img/path-2-1000@1x.png" /></div>
+        <div class="x30-mrdmCX"><img class="path-2-duml6S" src="img/path-2-1000@1x.png" /></div>
+        <div class="x31-mrdmCX"><img class="path-2-mzUmpP" src="img/path-2-1000@1x.png" /></div>
+        <div class="x32-mrdmCX"><img class="path-2-wujXyM" src="img/path-2-1000@1x.png" /></div>
+        <div class="x33-mrdmCX"><img class="path-2-RTn0Uj" src="img/path-2-1000@1x.png" /></div>
+        <div class="x34-mrdmCX"><img class="path-2-Bifq4o" src="img/path-2-1000@1x.png" /></div>
+        <div class="x35-mrdmCX"><img class="path-2-ej2BTU" src="img/path-2-1000@1x.png" /></div>
+        <div class="x36-mrdmCX"><img class="path-2-ItDr3J" src="img/path-2-1000@1x.png" /></div>
+        <div class="x37-mrdmCX"><img class="path-2-KNryms" src="img/path-2-1000@1x.png" /></div>
+        <div class="x38-mrdmCX"><img class="path-2-xTnmqp" src="img/path-2-1000@1x.png" /></div>
+        <div class="x39-mrdmCX"><img class="path-2-7uFqKv" src="img/path-2-1000@1x.png" /></div>
+        <div class="x40-mrdmCX"><img class="path-2-Hou8Tp" src="img/path-2-1000@1x.png" /></div>
+        <div class="x41-mrdmCX"><img class="path-2-K0toR1" src="img/path-2-1000@1x.png" /></div>
+        <div class="x42-mrdmCX"><img class="path-2-JQBFxX" src="img/path-2-1000@1x.png" /></div>
+        <div class="x43-mrdmCX"><img class="path-2-UQA9yp" src="img/path-2-1000@1x.png" /></div>
+        <div class="x44-mrdmCX"><img class="path-2-0hdxCF" src="img/path-2-1000@1x.png" /></div>
+        <div class="x45-mrdmCX"><img class="path-2-La9BIA" src="img/path-2-1000@1x.png" /></div>
+        <div class="x46-mrdmCX"><img class="path-2-xIxmrt" src="img/path-2-1000@1x.png" /></div>
+        <div class="x47-mrdmCX"><img class="path-2-fdT50g" src="img/path-2-1000@1x.png" /></div>
+        <div class="x48-mrdmCX"><img class="path-2-fLegCf" src="img/path-2-1000@1x.png" /></div>
+        <div class="x49-mrdmCX"><img class="path-2-JJ69ap" src="img/path-2-1000@1x.png" /></div>
+        <div class="x50-mrdmCX"><img class="path-2-klpxbf" src="img/path-2-1000@1x.png" /></div>
+        <div class="x51-mrdmCX"><img class="path-2-xwzNXO" src="img/path-2-1000@1x.png" /></div>
+        <div class="x52-mrdmCX"><img class="path-2-8HO5iA" src="img/path-2-1000@1x.png" /></div>
+        <div class="x53-mrdmCX"><img class="path-2-t6xaD7" src="img/path-2-1000@1x.png" /></div>
+        <div class="x54-mrdmCX"><img class="path-2-EbrUNr" src="img/path-2-1000@1x.png" /></div>
+        <div class="x55-mrdmCX"><img class="path-2-MucbHx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x56-mrdmCX"><img class="path-2-Fy7hx5" src="img/path-2-1000@1x.png" /></div>
+        <div class="x57-mrdmCX"><img class="path-2-KoZOSn" src="img/path-2-1000@1x.png" /></div>
+        <div class="x58-mrdmCX"><img class="path-2-fu1RKE" src="img/path-2-1000@1x.png" /></div>
+        <div class="x59-mrdmCX"><img class="path-2-s3NZmG" src="img/path-2-1000@1x.png" /></div>
+        <div class="x60-mrdmCX"><img class="path-2-xN0SPF" src="img/path-2-1000@1x.png" /></div>
+        <div class="x61-mrdmCX"><img class="path-2-Rn2pR5" src="img/path-2-1000@1x.png" /></div>
+        <div class="x62-mrdmCX"><img class="path-2-nLJ52x" src="img/path-2-1000@1x.png" /></div>
+        <div class="x63-mrdmCX"><img class="path-2-xWilDG" src="img/path-2-1000@1x.png" /></div>
+        <div class="x64-mrdmCX"><img class="path-2-RPjxOx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x65-mrdmCX"><img class="path-2-sELaKE" src="img/path-2-1000@1x.png" /></div>
+        <div class="x66-mrdmCX"><img class="path-2-RQBPUG" src="img/path-2-1000@1x.png" /></div>
+        <div class="x67-mrdmCX"><img class="path-2-9rrpRL" src="img/path-2-1000@1x.png" /></div>
+        <div class="x68-mrdmCX"><img class="path-2-3JY3bf" src="img/path-2-1000@1x.png" /></div>
+        <div class="x69-mrdmCX"><img class="path-2-WCq5bT" src="img/path-2-1000@1x.png" /></div>
+        <div class="x70-mrdmCX"><img class="path-2-FqtvWa" src="img/path-2-1000@1x.png" /></div>
+        <div class="x71-mrdmCX"><img class="path-2-1neg2c" src="img/path-2-1000@1x.png" /></div>
+        <div class="x72-mrdmCX"><img class="path-2-oRCI4o" src="img/path-2-1000@1x.png" /></div>
+        <div class="x73-mrdmCX"><img class="path-2-iBdndr" src="img/path-2-1000@1x.png" /></div>
+        <div class="x74-mrdmCX"><img class="path-2-LkuX2M" src="img/path-2-1000@1x.png" /></div>
+        <div class="x75-mrdmCX"><img class="path-2-76RRIl" src="img/path-2-1000@1x.png" /></div>
+        <div class="x76-mrdmCX"><img class="path-2-JqK7Jw" src="img/path-2-1000@1x.png" /></div>
+        <div class="x77-mrdmCX"><img class="path-2-xmmzwL" src="img/path-2-1000@1x.png" /></div>
+        <div class="x78-mrdmCX"><img class="path-2-HREIjz" src="img/path-2-1000@1x.png" /></div>
+        <div class="x79-mrdmCX"><img class="path-2-9ptxbP" src="img/path-2-1000@1x.png" /></div>
+        <div class="x80-mrdmCX"><img class="path-2-a1tuui" src="img/path-2-1000@1x.png" /></div>
+        <div class="x81-mrdmCX"><img class="path-2-QuncgW" src="img/path-2-1000@1x.png" /></div>
+        <div class="x82-mrdmCX"><img class="path-2-9SvcOU" src="img/path-2-1000@1x.png" /></div>
+        <div class="x83-mrdmCX"><img class="path-2-icFNVt" src="img/path-2-1000@1x.png" /></div>
+        <div class="x84-mrdmCX"><img class="path-2-4x0aJ2" src="img/path-2-1000@1x.png" /></div>
+        <div class="x85-mrdmCX"><img class="path-2-NRwTYQ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x86-mrdmCX"><img class="path-2-8iaju6" src="img/path-2-1000@1x.png" /></div>
+        <div class="x87-mrdmCX"><img class="path-2-R2dYxU" src="img/path-2-1000@1x.png" /></div>
+        <div class="x88-mrdmCX"><img class="path-2-xQAwQM" src="img/path-2-1000@1x.png" /></div>
+        <div class="x89-mrdmCX"><img class="path-2-Sugbpr" src="img/path-2-1000@1x.png" /></div>
+        <div class="x90-mrdmCX"><img class="path-2-UKsnSj" src="img/path-2-1000@1x.png" /></div>
+        <div class="x91-mrdmCX"><img class="path-2-Rx52dT" src="img/path-2-1000@1x.png" /></div>
+        <div class="x92-mrdmCX"><img class="path-2-E89opZ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x93-mrdmCX"><img class="path-2-A7S2uq" src="img/path-2-1000@1x.png" /></div>
+        <div class="x94-mrdmCX"><img class="path-2-x2uCR4" src="img/path-2-1000@1x.png" /></div>
+        <div class="x95-mrdmCX"><img class="path-2-HtSavS" src="img/path-2-1000@1x.png" /></div>
+        <div class="x96-mrdmCX"><img class="path-2-Gx30Wy" src="img/path-2-1000@1x.png" /></div>
+        <div class="x97-mrdmCX"><img class="path-2-dv8AR9" src="img/path-2-1000@1x.png" /></div>
+        <div class="x98-mrdmCX"><img class="path-2-q1jLlM" src="img/path-2-1000@1x.png" /></div>
+        <div class="x99-mrdmCX"><img class="path-2-jtCOkk" src="img/path-2-1000@1x.png" /></div>
+        <div class="x100-mrdmCX"><img class="path-2-9uPZIi" src="img/path-2-1000@1x.png" /></div>
+        <div class="x101-mrdmCX"><img class="path-2-2bhCwT" src="img/path-2-1000@1x.png" /></div>
+        <div class="x102-mrdmCX"><img class="path-2-YnZ6Jb" src="img/path-2-1000@1x.png" /></div>
+        <div class="x103-mrdmCX"><img class="path-2-w0WXnS" src="img/path-2-1000@1x.png" /></div>
+        <div class="x104-mrdmCX"><img class="path-2-MqwUTv" src="img/path-2-1000@1x.png" /></div>
+        <div class="x105-mrdmCX"><img class="path-2-vN4l1U" src="img/path-2-1000@1x.png" /></div>
+        <div class="x106-mrdmCX"><img class="path-2-zoxnSO" src="img/path-2-1000@1x.png" /></div>
+        <div class="x107-mrdmCX"><img class="path-2-xxJR3y" src="img/path-2-1000@1x.png" /></div>
+        <div class="x108-mrdmCX"><img class="path-2-v0jerz" src="img/path-2-1000@1x.png" /></div>
+        <div class="x109-mrdmCX"><img class="path-2-kHgO3B" src="img/path-2-1000@1x.png" /></div>
+        <div class="x110-mrdmCX"><img class="path-2-q0Jcxf" src="img/path-2-1000@1x.png" /></div>
+        <div class="x111-mrdmCX"><img class="path-2-OYTyLD" src="img/path-2-1000@1x.png" /></div>
+        <div class="x112-mrdmCX"><img class="path-2-p4Di6o" src="img/path-2-1000@1x.png" /></div>
+        <div class="x113-mrdmCX"><img class="path-2-eSfvwp" src="img/path-2-1000@1x.png" /></div>
+        <div class="x114-mrdmCX"><img class="path-2-pcnCDD" src="img/path-2-1000@1x.png" /></div>
+        <div class="x115-mrdmCX"><img class="path-2-3sMEkW" src="img/path-2-1000@1x.png" /></div>
+        <div class="x116-mrdmCX"><img class="path-2-VHhxIx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x117-mrdmCX"><img class="path-2-1L2fxA" src="img/path-2-1000@1x.png" /></div>
+        <div class="x118-mrdmCX"><img class="path-2-fDcHCE" src="img/path-2-1000@1x.png" /></div>
+        <div class="x119-mrdmCX"><img class="path-2-2k3XKa" src="img/path-2-1000@1x.png" /></div>
+        <div class="x120-mrdmCX"><img class="path-2-Pxx0WH" src="img/path-2-1000@1x.png" /></div>
+        <div class="x121-mrdmCX"><img class="path-2-32HZBZ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x122-mrdmCX"><img class="path-2-Qux2q5" src="img/path-2-1000@1x.png" /></div>
+        <div class="x123-mrdmCX"><img class="path-2-dyVdD3" src="img/path-2-1000@1x.png" /></div>
+        <div class="x124-mrdmCX"><img class="path-2-sXNmxx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x125-mrdmCX"><img class="path-2-3tzpwW" src="img/path-2-1000@1x.png" /></div>
+        <div class="x126-mrdmCX"><img class="path-2-TZuUVl" src="img/path-2-1000@1x.png" /></div>
+        <div class="x127-mrdmCX"><img class="path-2-cOPxDu" src="img/path-2-1000@1x.png" /></div>
+        <div class="x128-mrdmCX"><img class="path-2-bj9uMO" src="img/path-2-1000@1x.png" /></div>
+        <div class="x129-mrdmCX"><img class="path-2-m5rB0W" src="img/path-2-1000@1x.png" /></div>
+        <div class="x130-mrdmCX"><img class="path-2-FTGerm" src="img/path-2-1000@1x.png" /></div>
+        <div class="x131-mrdmCX"><img class="path-2-exsLuG" src="img/path-2-1000@1x.png" /></div>
+        <div class="x132-mrdmCX"><img class="path-2-AHf8Me" src="img/path-2-1000@1x.png" /></div>
+        <div class="x133-mrdmCX"><img class="path-2-BZABRA" src="img/path-2-1000@1x.png" /></div>
+        <div class="x134-mrdmCX"><img class="path-2-i5wox6" src="img/path-2-1000@1x.png" /></div>
+        <div class="x135-mrdmCX"><img class="path-2-JlnkIq" src="img/path-2-1000@1x.png" /></div>
+        <div class="x136-mrdmCX"><img class="path-2-nDN2JZ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x137-mrdmCX"><img class="path-2-PDjyvs" src="img/path-2-1000@1x.png" /></div>
+        <div class="x138-mrdmCX"><img class="path-2-faxKCR" src="img/path-2-1000@1x.png" /></div>
+        <div class="x139-mrdmCX"><img class="path-2-yq3nbr" src="img/path-2-1000@1x.png" /></div>
+        <div class="x140-mrdmCX"><img class="path-2-MO5Hov" src="img/path-2-1000@1x.png" /></div>
+        <div class="x141-mrdmCX"><img class="path-2-sLuf67" src="img/path-2-1000@1x.png" /></div>
+        <div class="x142-mrdmCX"><img class="path-2-gvemfx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x143-mrdmCX"><img class="path-2-OrBnRf" src="img/path-2-1000@1x.png" /></div>
+        <div class="x144-mrdmCX"><img class="path-2-jBJ8yg" src="img/path-2-1000@1x.png" /></div>
+        <div class="x145-mrdmCX"><img class="path-2-dxe5xY" src="img/path-2-1000@1x.png" /></div>
+        <div class="x146-mrdmCX"><img class="path-2-wawfog" src="img/path-2-1000@1x.png" /></div>
+        <div class="x147-mrdmCX"><img class="path-2-4RB257" src="img/path-2-1000@1x.png" /></div>
+        <div class="x148-mrdmCX"><img class="path-2-u9gPFN" src="img/path-2-1000@1x.png" /></div>
+        <div class="x149-mrdmCX"><img class="path-2-C5acxQ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x150-mrdmCX"><img class="path-2-k7qdQp" src="img/path-2-1000@1x.png" /></div>
+        <div class="x151-mrdmCX"><img class="path-2-nxBHnF" src="img/path-2-1000@1x.png" /></div>
+        <div class="x152-mrdmCX"><img class="path-2-ksVCpI" src="img/path-2-1000@1x.png" /></div>
+        <div class="x153-mrdmCX"><img class="path-2-Rg3zfo" src="img/path-2-1000@1x.png" /></div>
+        <div class="x154-mrdmCX"><img class="path-2-2hjNIS" src="img/path-2-1000@1x.png" /></div>
+        <div class="x155-mrdmCX"><img class="path-2-XdAzeB" src="img/path-2-1000@1x.png" /></div>
+        <div class="x156-mrdmCX"><img class="path-2-jMLahn" src="img/path-2-1000@1x.png" /></div>
+        <div class="x157-mrdmCX"><img class="path-2-TWzdQg" src="img/path-2-1000@1x.png" /></div>
+        <div class="x158-mrdmCX"><img class="path-2-ql9bC7" src="img/path-2-1000@1x.png" /></div>
+        <div class="x159-mrdmCX"><img class="path-2-6xXrPt" src="img/path-2-1000@1x.png" /></div>
+        <div class="x160-mrdmCX"><img class="path-2-RbQxSD" src="img/path-2-1000@1x.png" /></div>
+        <div class="x161-mrdmCX"><img class="path-2-ffX2e3" src="img/path-2-1000@1x.png" /></div>
+        <div class="x162-mrdmCX"><img class="path-2-S97Bww" src="img/path-2-1000@1x.png" /></div>
+        <div class="x163-mrdmCX"><img class="path-2-NW69EI" src="img/path-2-1000@1x.png" /></div>
+        <div class="x164-mrdmCX"><img class="path-2-trUxNA" src="img/path-2-1000@1x.png" /></div>
+        <div class="x165-mrdmCX"><img class="path-2-gsSJVr" src="img/path-2-1000@1x.png" /></div>
+        <div class="x166-mrdmCX"><img class="path-2-o2HGK7" src="img/path-2-1000@1x.png" /></div>
+        <div class="x167-mrdmCX"><img class="path-2-h5swXZ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x168-mrdmCX"><img class="path-2-wSb7cx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x169-mrdmCX"><img class="path-2-9QdJVR" src="img/path-2-1000@1x.png" /></div>
+        <div class="x170-mrdmCX"><img class="path-2-x1HBun" src="img/path-2-1000@1x.png" /></div>
+        <div class="x171-mrdmCX"><img class="path-2-wqoBqm" src="img/path-2-1000@1x.png" /></div>
+        <div class="x172-mrdmCX"><img class="path-2-hYRZn8" src="img/path-2-1000@1x.png" /></div>
+        <div class="x173-mrdmCX"><img class="path-2-snXRH4" src="img/path-2-1000@1x.png" /></div>
+        <div class="x174-mrdmCX"><img class="path-2-3pYynp" src="img/path-2-1000@1x.png" /></div>
+        <div class="x175-mrdmCX"><img class="path-2-xZcRY2" src="img/path-2-1000@1x.png" /></div>
+        <div class="x176-mrdmCX"><img class="path-2-IpgIXx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x177-mrdmCX"><img class="path-2-XiO8WT" src="img/path-2-1000@1x.png" /></div>
+        <div class="x178-mrdmCX"><img class="path-2-Ux7naZ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x179-mrdmCX"><img class="path-2-XdRsxl" src="img/path-2-1000@1x.png" /></div>
+        <div class="x180-mrdmCX"><img class="path-2-T3c69O" src="img/path-2-1000@1x.png" /></div>
+        <div class="x181-mrdmCX"><img class="path-2-MIeuaC" src="img/path-2-1000@1x.png" /></div>
+        <div class="x182-mrdmCX"><img class="path-2-sGb45e" src="img/path-2-1000@1x.png" /></div>
+        <div class="x183-mrdmCX"><img class="path-2-caJUpH" src="img/path-2-1000@1x.png" /></div>
+        <div class="x184-mrdmCX"><img class="path-2-p82pk1" src="img/path-2-1000@1x.png" /></div>
+        <div class="x185-mrdmCX"><img class="path-2-pobOdv" src="img/path-2-1000@1x.png" /></div>
+        <div class="x186-mrdmCX"><img class="path-2-fUNlg0" src="img/path-2-1000@1x.png" /></div>
+        <div class="x187-mrdmCX"><img class="path-2-2CUNAK" src="img/path-2-1000@1x.png" /></div>
+        <div class="x188-mrdmCX"><img class="path-2-gLGJSx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x189-mrdmCX"><img class="path-2-S3rSPP" src="img/path-2-1000@1x.png" /></div>
+        <div class="x190-mrdmCX"><img class="path-2-34iIPA" src="img/path-2-1000@1x.png" /></div>
+        <div class="x191-mrdmCX"><img class="path-2-Bqu5uq" src="img/path-2-1000@1x.png" /></div>
+        <div class="x192-mrdmCX"><img class="path-2-i1glmN" src="img/path-2-1000@1x.png" /></div>
+        <div class="x193-mrdmCX"><img class="path-2-bEA5i4" src="img/path-2-1000@1x.png" /></div>
+        <div class="x194-mrdmCX"><img class="path-2-udNek0" src="img/path-2-1000@1x.png" /></div>
+        <div class="x195-mrdmCX"><img class="path-2-hSqOi3" src="img/path-2-1000@1x.png" /></div>
+        <div class="x196-mrdmCX"><img class="path-2-BwdK2p" src="img/path-2-1000@1x.png" /></div>
+        <div class="x197-mrdmCX"><img class="path-2-kbva6B" src="img/path-2-1000@1x.png" /></div>
+        <div class="x198-mrdmCX"><img class="path-2-CG4Veo" src="img/path-2-1000@1x.png" /></div>
+        <div class="x199-mrdmCX"><img class="path-2-AgQ2BP" src="img/path-2-1000@1x.png" /></div>
+        <div class="x200-mrdmCX"><img class="path-2-dCNeWC" src="img/path-2-1000@1x.png" /></div>
+        <div class="x201-mrdmCX"><img class="path-2-6ypsOl" src="img/path-2-1000@1x.png" /></div>
+        <div class="x202-mrdmCX"><img class="path-2-J3LW8T" src="img/path-2-1000@1x.png" /></div>
+        <div class="x203-mrdmCX"><img class="path-2-itJN3O" src="img/path-2-1000@1x.png" /></div>
+        <div class="x204-mrdmCX"><img class="path-2-7q9tk7" src="img/path-2-1000@1x.png" /></div>
+        <div class="x205-mrdmCX"><img class="path-2-ax3vpl" src="img/path-2-1000@1x.png" /></div>
+        <div class="x206-mrdmCX"><img class="path-2-D6kh1r" src="img/path-2-1000@1x.png" /></div>
+        <div class="x207-mrdmCX"><img class="path-2-M73f7R" src="img/path-2-1000@1x.png" /></div>
+        <div class="x208-mrdmCX"><img class="path-2-0o4Dt5" src="img/path-2-1000@1x.png" /></div>
+        <div class="x209-mrdmCX"><img class="path-2-xqsJVM" src="img/path-2-1000@1x.png" /></div>
+        <div class="x210-mrdmCX"><img class="path-2-SIgf0H" src="img/path-2-1000@1x.png" /></div>
+        <div class="x211-mrdmCX"><img class="path-2-0k3K8y" src="img/path-2-1000@1x.png" /></div>
+        <div class="x212-mrdmCX"><img class="path-2-m4acxS" src="img/path-2-1000@1x.png" /></div>
+        <div class="x213-mrdmCX"><img class="path-2-3kOhmZ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x214-mrdmCX"><img class="path-2-zCeOcz" src="img/path-2-1000@1x.png" /></div>
+        <div class="x215-mrdmCX"><img class="path-2-xGDgPs" src="img/path-2-1000@1x.png" /></div>
+        <div class="x216-mrdmCX"><img class="path-2-6whVmG" src="img/path-2-1000@1x.png" /></div>
+        <div class="x217-mrdmCX"><img class="path-2-ujQAmL" src="img/path-2-1000@1x.png" /></div>
+        <div class="x218-mrdmCX"><img class="path-2-nnp44x" src="img/path-2-1000@1x.png" /></div>
+        <div class="x219-mrdmCX"><img class="path-2-jzni7Z" src="img/path-2-1000@1x.png" /></div>
+        <div class="x220-mrdmCX"><img class="path-2-K2x9Am" src="img/path-2-1000@1x.png" /></div>
+        <div class="x221-mrdmCX"><img class="path-2-gxLXlq" src="img/path-2-1000@1x.png" /></div>
+        <div class="x222-mrdmCX"><img class="path-2-y8RV4F" src="img/path-2-1000@1x.png" /></div>
+        <div class="x223-mrdmCX"><img class="path-2-TFUsmE" src="img/path-2-1000@1x.png" /></div>
+        <div class="x224-mrdmCX"><img class="path-2-yCDlWm" src="img/path-2-1000@1x.png" /></div>
+        <div class="x225-mrdmCX"><img class="path-2-Tx3AzM" src="img/path-2-1000@1x.png" /></div>
+        <div class="x226-mrdmCX"><img class="path-2-nd3WFp" src="img/path-2-1000@1x.png" /></div>
+        <div class="x227-mrdmCX"><img class="path-2-bJBeLt" src="img/path-2-1000@1x.png" /></div>
+        <div class="x228-mrdmCX"><img class="path-2-7Z8CdU" src="img/path-2-1000@1x.png" /></div>
+        <div class="x229-mrdmCX"><img class="path-2-nT4uIp" src="img/path-2-1000@1x.png" /></div>
+        <div class="x230-mrdmCX"><img class="path-2-vRBuiK" src="img/path-2-1000@1x.png" /></div>
+        <div class="x231-mrdmCX"><img class="path-2-4mWQxH" src="img/path-2-1000@1x.png" /></div>
+        <div class="x232-mrdmCX"><img class="path-2-ppBFXZ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x233-mrdmCX"><img class="path-2-ZwrIDR" src="img/path-2-1000@1x.png" /></div>
+        <div class="x234-mrdmCX"><img class="path-2-vnfhfH" src="img/path-2-1000@1x.png" /></div>
+        <div class="x235-mrdmCX"><img class="path-2-9MOz29" src="img/path-2-1000@1x.png" /></div>
+        <div class="x236-mrdmCX"><img class="path-2-hvOIHe" src="img/path-2-1000@1x.png" /></div>
+        <div class="x237-mrdmCX"><img class="path-2-yCOwLe" src="img/path-2-1000@1x.png" /></div>
+        <div class="x238-mrdmCX"><img class="path-2-XZQoX2" src="img/path-2-1000@1x.png" /></div>
+        <div class="x239-mrdmCX"><img class="path-2-hnQcck" src="img/path-2-1000@1x.png" /></div>
+        <div class="x240-mrdmCX"><img class="path-2-7ZjcpH" src="img/path-2-1000@1x.png" /></div>
+        <div class="x241-mrdmCX"><img class="path-2-X0UQOH" src="img/path-2-1000@1x.png" /></div>
+        <div class="x242-mrdmCX"><img class="path-2-x9xxZ0" src="img/path-2-1000@1x.png" /></div>
+        <div class="x243-mrdmCX"><img class="path-2-CU1Prs" src="img/path-2-1000@1x.png" /></div>
+        <div class="x244-mrdmCX"><img class="path-2-oYFR3R" src="img/path-2-1000@1x.png" /></div>
+        <div class="x245-mrdmCX"><img class="path-2-k38CRk" src="img/path-2-1000@1x.png" /></div>
+        <div class="x246-mrdmCX"><img class="path-2-bhsqxF" src="img/path-2-1000@1x.png" /></div>
+        <div class="x247-mrdmCX"><img class="path-2-I3uhc5" src="img/path-2-1000@1x.png" /></div>
+        <div class="x248-mrdmCX"><img class="path-2-9I2SKn" src="img/path-2-1000@1x.png" /></div>
+        <div class="x249-mrdmCX"><img class="path-2-xSxuwO" src="img/path-2-1000@1x.png" /></div>
+        <div class="x250-mrdmCX"><img class="path-2-xPZpQa" src="img/path-2-1000@1x.png" /></div>
+        <div class="x251-mrdmCX"><img class="path-2-UUL5Zk" src="img/path-2-1000@1x.png" /></div>
+        <div class="x252-mrdmCX"><img class="path-2-KDHRDI" src="img/path-2-1000@1x.png" /></div>
+        <div class="x253-mrdmCX"><img class="path-2-JH9RTn" src="img/path-2-1000@1x.png" /></div>
+        <div class="x254-mrdmCX"><img class="path-2-JweGkZ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x255-mrdmCX"><img class="path-2-oOtihW" src="img/path-2-1000@1x.png" /></div>
+        <div class="x256-mrdmCX"><img class="path-2-RGLtDK" src="img/path-2-1000@1x.png" /></div>
+        <div class="x257-mrdmCX"><img class="path-2-tOPxmf" src="img/path-2-1000@1x.png" /></div>
+        <div class="x258-mrdmCX"><img class="path-2-BTrM5i" src="img/path-2-1000@1x.png" /></div>
+        <div class="x259-mrdmCX"><img class="path-2-xBZrEd" src="img/path-2-1000@1x.png" /></div>
+        <div class="x260-mrdmCX"><img class="path-2-SxCAlC" src="img/path-2-1000@1x.png" /></div>
+        <div class="x261-mrdmCX"><img class="path-2-FnevGt" src="img/path-2-1000@1x.png" /></div>
+        <div class="x262-mrdmCX"><img class="path-2-k8m4R4" src="img/path-2-1000@1x.png" /></div>
+        <div class="x263-mrdmCX"><img class="path-2-gr1OQB" src="img/path-2-1000@1x.png" /></div>
+        <div class="x264-mrdmCX"><img class="path-2-zqydg1" src="img/path-2-1000@1x.png" /></div>
+        <div class="x265-mrdmCX"><img class="path-2-LVaPYY" src="img/path-2-1000@1x.png" /></div>
+        <div class="x266-mrdmCX"><img class="path-2-5Rbpm5" src="img/path-2-1000@1x.png" /></div>
+        <div class="x267-mrdmCX"><img class="path-2-GlqVkY" src="img/path-2-1000@1x.png" /></div>
+        <div class="x268-mrdmCX"><img class="path-2-GRWkft" src="img/path-2-1000@1x.png" /></div>
+        <div class="x269-mrdmCX"><img class="path-2-nT0ebV" src="img/path-2-1000@1x.png" /></div>
+        <div class="x270-mrdmCX"><img class="path-2-Dz2IFh" src="img/path-2-1000@1x.png" /></div>
+        <div class="x271-mrdmCX"><img class="path-2-LVqxZX" src="img/path-2-1000@1x.png" /></div>
+        <div class="x272-mrdmCX"><img class="path-2-DElim6" src="img/path-2-1000@1x.png" /></div>
+        <div class="x273-mrdmCX"><img class="path-2-LqrB9w" src="img/path-2-1000@1x.png" /></div>
+        <div class="x274-mrdmCX"><img class="path-2-cmQxFG" src="img/path-2-1000@1x.png" /></div>
+        <div class="x275-mrdmCX"><img class="path-2-Vo9fpt" src="img/path-2-1000@1x.png" /></div>
+        <div class="x276-mrdmCX"><img class="path-2-onszm0" src="img/path-2-1000@1x.png" /></div>
+        <div class="x277-mrdmCX"><img class="path-2-CwKkRp" src="img/path-2-1000@1x.png" /></div>
+        <div class="x278-mrdmCX"><img class="path-2-2io5vo" src="img/path-2-1000@1x.png" /></div>
+        <div class="x279-mrdmCX"><img class="path-2-hg62Yn" src="img/path-2-1000@1x.png" /></div>
+        <div class="x280-mrdmCX"><img class="path-2-gBdPRZ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x281-mrdmCX"><img class="path-2-BxpJBx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x282-mrdmCX"><img class="path-2-79VCpM" src="img/path-2-1000@1x.png" /></div>
+        <div class="x283-mrdmCX"><img class="path-2-lttIpW" src="img/path-2-1000@1x.png" /></div>
+        <div class="x284-mrdmCX"><img class="path-2-SIew4Y" src="img/path-2-1000@1x.png" /></div>
+        <div class="x285-mrdmCX"><img class="path-2-4AW7LU" src="img/path-2-1000@1x.png" /></div>
+        <div class="x286-mrdmCX"><img class="path-2-EqRwXG" src="img/path-2-1000@1x.png" /></div>
+        <div class="x287-mrdmCX"><img class="path-2-jzUGrV" src="img/path-2-1000@1x.png" /></div>
+        <div class="x288-mrdmCX"><img class="path-2-rWxxqc" src="img/path-2-1000@1x.png" /></div>
+        <div class="x289-mrdmCX"><img class="path-2-Z95Pqs" src="img/path-2-1000@1x.png" /></div>
+        <div class="x290-mrdmCX"><img class="path-2-9MiV7N" src="img/path-2-1000@1x.png" /></div>
+        <div class="x291-mrdmCX"><img class="path-2-C6x1Z8" src="img/path-2-1000@1x.png" /></div>
+        <div class="x292-mrdmCX"><img class="path-2-J6fN1z" src="img/path-2-1000@1x.png" /></div>
+        <div class="x293-mrdmCX"><img class="path-2-oRfoHC" src="img/path-2-1000@1x.png" /></div>
+        <div class="x294-mrdmCX"><img class="path-2-widOiY" src="img/path-2-1000@1x.png" /></div>
+        <div class="x295-mrdmCX"><img class="path-2-KhOHXN" src="img/path-2-1000@1x.png" /></div>
+        <div class="x296-mrdmCX"><img class="path-2-i3TCDi" src="img/path-2-1000@1x.png" /></div>
+        <div class="x297-mrdmCX"><img class="path-2-2kE8DR" src="img/path-2-1000@1x.png" /></div>
+        <div class="x298-mrdmCX"><img class="path-2-dQzOtx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x299-mrdmCX"><img class="path-2-dhNk5Z" src="img/path-2-1000@1x.png" /></div>
+        <div class="x300-mrdmCX"><img class="path-2-fQmJZJ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x301-mrdmCX"><img class="path-2-IUua0e" src="img/path-2-1000@1x.png" /></div>
+        <div class="x302-mrdmCX"><img class="path-2-8xDbVn" src="img/path-2-1000@1x.png" /></div>
+        <div class="x303-mrdmCX"><img class="path-2-wyaJha" src="img/path-2-1000@1x.png" /></div>
+        <div class="x304-mrdmCX"><img class="path-2-YGaw52" src="img/path-2-1000@1x.png" /></div>
+        <div class="x305-mrdmCX"><img class="path-2-n2p61M" src="img/path-2-1000@1x.png" /></div>
+        <div class="x306-mrdmCX"><img class="path-2-wCHZJS" src="img/path-2-1000@1x.png" /></div>
+        <div class="x307-mrdmCX"><img class="path-2-JpWFqN" src="img/path-2-1000@1x.png" /></div>
+        <div class="x308-mrdmCX"><img class="path-2-zCUlrU" src="img/path-2-1000@1x.png" /></div>
+        <div class="x309-mrdmCX"><img class="path-2-d9bEyO" src="img/path-2-1000@1x.png" /></div>
+        <div class="x310-mrdmCX"><img class="path-2-ulw8Lr" src="img/path-2-1000@1x.png" /></div>
+        <div class="x311-mrdmCX"><img class="path-2-bXIgeY" src="img/path-2-1000@1x.png" /></div>
+        <div class="x312-mrdmCX"><img class="path-2-gx7Q6p" src="img/path-2-1000@1x.png" /></div>
+        <div class="x313-mrdmCX"><img class="path-2-JnZKF0" src="img/path-2-1000@1x.png" /></div>
+        <div class="x314-mrdmCX"><img class="path-2-UBaZFc" src="img/path-2-1000@1x.png" /></div>
+        <div class="x315-mrdmCX"><img class="path-2-QZg8rA" src="img/path-2-1000@1x.png" /></div>
+        <div class="x316-mrdmCX"><img class="path-2-otzKx5" src="img/path-2-1000@1x.png" /></div>
+        <div class="x317-mrdmCX"><img class="path-2-WoxFKT" src="img/path-2-1000@1x.png" /></div>
+        <div class="x318-mrdmCX"><img class="path-2-mVCIYU" src="img/path-2-1000@1x.png" /></div>
+        <div class="x319-mrdmCX"><img class="path-2-kpHOct" src="img/path-2-1000@1x.png" /></div>
+        <div class="x320-mrdmCX"><img class="path-2-zmKY7a" src="img/path-2-1000@1x.png" /></div>
+        <div class="x321-mrdmCX"><img class="path-2-yDruce" src="img/path-2-1000@1x.png" /></div>
+        <div class="x322-mrdmCX"><img class="path-2-WPi4Az" src="img/path-2-1000@1x.png" /></div>
+        <div class="x323-mrdmCX"><img class="path-2-p3t2TX" src="img/path-2-1000@1x.png" /></div>
+        <div class="x324-mrdmCX"><img class="path-2-aKjI1J" src="img/path-2-1000@1x.png" /></div>
+        <div class="x325-mrdmCX"><img class="path-2-drkjKt" src="img/path-2-1000@1x.png" /></div>
+        <div class="x326-mrdmCX"><img class="path-2-guSUb4" src="img/path-2-1000@1x.png" /></div>
+        <div class="x327-mrdmCX"><img class="path-2-ZMuG9B" src="img/path-2-1000@1x.png" /></div>
+        <div class="x328-mrdmCX"><img class="path-2-zS0X94" src="img/path-2-1000@1x.png" /></div>
+        <div class="x329-mrdmCX"><img class="path-2-7EFRmV" src="img/path-2-1000@1x.png" /></div>
+        <div class="x330-mrdmCX"><img class="path-2-qInhiX" src="img/path-2-1000@1x.png" /></div>
+        <div class="x331-mrdmCX"><img class="path-2-WxGJFu" src="img/path-2-1000@1x.png" /></div>
+        <div class="x332-mrdmCX"><img class="path-2-KdLUGl" src="img/path-2-1000@1x.png" /></div>
+        <div class="x333-mrdmCX"><img class="path-2-FCZSVn" src="img/path-2-1000@1x.png" /></div>
+        <div class="x334-mrdmCX"><img class="path-2-6uAleK" src="img/path-2-1000@1x.png" /></div>
+        <div class="x335-mrdmCX"><img class="path-2-YVqnQJ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x336-mrdmCX"><img class="path-2-mxUNxI" src="img/path-2-1000@1x.png" /></div>
+        <div class="x337-mrdmCX"><img class="path-2-UDPPdy" src="img/path-2-1000@1x.png" /></div>
+        <div class="x338-mrdmCX"><img class="path-2-1E4Ve7" src="img/path-2-1000@1x.png" /></div>
+        <div class="x339-mrdmCX"><img class="path-2-qSI1ue" src="img/path-2-1000@1x.png" /></div>
+        <div class="x340-mrdmCX"><img class="path-2-74PqG5" src="img/path-2-1000@1x.png" /></div>
+        <div class="x341-mrdmCX"><img class="path-2-PzcxVA" src="img/path-2-1000@1x.png" /></div>
+        <div class="x342-mrdmCX"><img class="path-2-JOYnN3" src="img/path-2-1000@1x.png" /></div>
+        <div class="x343-mrdmCX"><img class="path-2-8xmEWn" src="img/path-2-1000@1x.png" /></div>
+        <div class="x344-mrdmCX"><img class="path-2-LrSbyE" src="img/path-2-1000@1x.png" /></div>
+        <div class="x345-mrdmCX"><img class="path-2-iwmn0b" src="img/path-2-1000@1x.png" /></div>
+        <div class="x346-mrdmCX"><img class="path-2-xJlrwF" src="img/path-2-1000@1x.png" /></div>
+        <div class="x347-mrdmCX"><img class="path-2-oZPyDj" src="img/path-2-1000@1x.png" /></div>
+        <div class="x348-mrdmCX"><img class="path-2-bhxdq0" src="img/path-2-1000@1x.png" /></div>
+        <div class="x349-mrdmCX"><img class="path-2-ZDKnnq" src="img/path-2-1000@1x.png" /></div>
+        <div class="x350-mrdmCX"><img class="path-2-pWClmQ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x351-mrdmCX"><img class="path-2-h1Aiqu" src="img/path-2-1000@1x.png" /></div>
+        <div class="x352-mrdmCX"><img class="path-2-fn4Qm9" src="img/path-2-1000@1x.png" /></div>
+        <div class="x353-mrdmCX"><img class="path-2-xTTuXP" src="img/path-2-1000@1x.png" /></div>
+        <div class="x354-mrdmCX"><img class="path-2-QxNEQ3" src="img/path-2-1000@1x.png" /></div>
+        <div class="x355-mrdmCX"><img class="path-2-0DtPxN" src="img/path-2-1000@1x.png" /></div>
+        <div class="x356-mrdmCX"><img class="path-2-TlwiW2" src="img/path-2-1000@1x.png" /></div>
+        <div class="x357-mrdmCX"><img class="path-2-qXyi26" src="img/path-2-1000@1x.png" /></div>
+        <div class="x358-mrdmCX"><img class="path-2-wd0CTX" src="img/path-2-1000@1x.png" /></div>
+        <div class="x359-mrdmCX"><img class="path-2-cCSOxI" src="img/path-2-1000@1x.png" /></div>
+        <div class="x360-mrdmCX"><img class="path-2-duHaTf" src="img/path-2-1000@1x.png" /></div>
+        <div class="x361-mrdmCX"><img class="path-2-hSXUex" src="img/path-2-1000@1x.png" /></div>
+        <div class="x362-mrdmCX"><img class="path-2-97PnAI" src="img/path-2-1000@1x.png" /></div>
+        <div class="x363-mrdmCX"><img class="path-2-wlfeTk" src="img/path-2-1000@1x.png" /></div>
+        <div class="x364-mrdmCX"><img class="path-2-xOsGIF" src="img/path-2-1000@1x.png" /></div>
+        <div class="x365-mrdmCX"><img class="path-2-ntqW04" src="img/path-2-1000@1x.png" /></div>
+        <div class="x366-mrdmCX"><img class="path-2-MTj9sL" src="img/path-2-1000@1x.png" /></div>
+        <div class="x367-mrdmCX"><img class="path-2-hrPQ76" src="img/path-2-1000@1x.png" /></div>
+        <div class="x368-mrdmCX"><img class="path-2-TFCrnB" src="img/path-2-1000@1x.png" /></div>
+        <div class="x369-mrdmCX"><img class="path-2-BSkofv" src="img/path-2-1000@1x.png" /></div>
+        <div class="x370-mrdmCX"><img class="path-2-ljaG3w" src="img/path-2-1000@1x.png" /></div>
+        <div class="x371-mrdmCX"><img class="path-2-GMxxwY" src="img/path-2-1000@1x.png" /></div>
+        <div class="x372-mrdmCX"><img class="path-2-LPwM9r" src="img/path-2-1000@1x.png" /></div>
+        <div class="x373-mrdmCX"><img class="path-2-fOgCux" src="img/path-2-1000@1x.png" /></div>
+        <div class="x374-mrdmCX"><img class="path-2-8NgVOp" src="img/path-2-1000@1x.png" /></div>
+        <div class="x375-mrdmCX"><img class="path-2-ZpqQxG" src="img/path-2-1000@1x.png" /></div>
+        <div class="x376-mrdmCX"><img class="path-2-IDxkxM" src="img/path-2-1000@1x.png" /></div>
+        <div class="x377-mrdmCX"><img class="path-2-vRavcx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x378-mrdmCX"><img class="path-2-TRAa13" src="img/path-2-1000@1x.png" /></div>
+        <div class="x379-mrdmCX"><img class="path-2-GHKwHS" src="img/path-2-1000@1x.png" /></div>
+        <div class="x380-mrdmCX"><img class="path-2-Jk14k7" src="img/path-2-1000@1x.png" /></div>
+        <div class="x381-mrdmCX"><img class="path-2-Ok7nAM" src="img/path-2-1000@1x.png" /></div>
+        <div class="x382-mrdmCX"><img class="path-2-Lv2rku" src="img/path-2-1000@1x.png" /></div>
+        <div class="x383-mrdmCX"><img class="path-2-Fd5u1K" src="img/path-2-1000@1x.png" /></div>
+        <div class="x384-mrdmCX"><img class="path-2-6oeJJW" src="img/path-2-1000@1x.png" /></div>
+        <div class="x385-mrdmCX"><img class="path-2-UQIFN9" src="img/path-2-1000@1x.png" /></div>
+        <div class="x386-mrdmCX"><img class="path-2-hNTmIc" src="img/path-2-1000@1x.png" /></div>
+        <div class="x387-mrdmCX"><img class="path-2-9Jx36x" src="img/path-2-1000@1x.png" /></div>
+        <div class="x388-mrdmCX"><img class="path-2-b9VihX" src="img/path-2-1000@1x.png" /></div>
+        <div class="x389-mrdmCX"><img class="path-2-2KsjeB" src="img/path-2-1000@1x.png" /></div>
+        <div class="x390-mrdmCX"><img class="path-2-Fh4f6N" src="img/path-2-1000@1x.png" /></div>
+        <div class="x391-mrdmCX"><img class="path-2-XVXaNX" src="img/path-2-1000@1x.png" /></div>
+        <div class="x392-mrdmCX"><img class="path-2-ehzbtN" src="img/path-2-1000@1x.png" /></div>
+        <div class="x393-mrdmCX"><img class="path-2-eFVGct" src="img/path-2-1000@1x.png" /></div>
+        <div class="x394-mrdmCX"><img class="path-2-uOUGv1" src="img/path-2-1000@1x.png" /></div>
+        <div class="x395-mrdmCX"><img class="path-2-4MU5WE" src="img/path-2-1000@1x.png" /></div>
+        <div class="x396-mrdmCX"><img class="path-2-NX2BUQ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x397-mrdmCX"><img class="path-2-QPFm0T" src="img/path-2-1000@1x.png" /></div>
+        <div class="x398-mrdmCX"><img class="path-2-kjAcvI" src="img/path-2-1000@1x.png" /></div>
+        <div class="x399-mrdmCX"><img class="path-2-j6oOYG" src="img/path-2-1000@1x.png" /></div>
+        <div class="x400-mrdmCX"><img class="path-2-SKhrPD" src="img/path-2-1000@1x.png" /></div>
+        <div class="x401-mrdmCX"><img class="path-2-TFpQ57" src="img/path-2-1000@1x.png" /></div>
+        <div class="x402-mrdmCX"><img class="path-2-q2WCUw" src="img/path-2-1000@1x.png" /></div>
+        <div class="x403-mrdmCX"><img class="path-2-IwZkBx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x404-mrdmCX"><img class="path-2-lLxCXq" src="img/path-2-1000@1x.png" /></div>
+      </div>
+      <div class="component-5-2-C61RwL">
+        <div class="e-plan-mobile-a-aily-activities-K2UgDK hoeflertext-normal-cello-35px">
+          <span class="span0-OGpy8v">E-plan Mobile App:</span><span class="span1-OGpy8v"> ​<br /><br /></span
+          ><span class="span2-OGpy8v"
+            >A part of a group project to design or to add a new feature to an existing app. E-plan is new designed app
+            based on user research methodology to help people manage and plan daily activities</span
+          >
+        </div>
+      </div>
+      <div class="component-8-1-C61RwL border-1px-dove-gray smart-layers-pointers">
+        <div class="e-plan-78wuxl hoeflertext-regular-normal-white-40px">E-Plan</div>
+      </div>
+      <div class="component-8-2-C61RwL border-1px-dove-gray smart-layers-pointers">
+        <div class="coming-soon-kP2rIN hoeflertext-regular-normal-cello-40px-3">Coming soon</div>
+      </div>
+      <div class="component-8-3-C61RwL border-1px-dove-gray smart-layers-pointers">
+        <div class="fotocanorg-fr332x hoeflertext-regular-normal-cello-40px-2">Fotocan.org</div>
+      </div>
+      <div class="component-8-4-C61RwL border-1px-dove-gray smart-layers-pointers">
+        <div class="x-case-study-4hGSDg hoeflertext-regular-normal-cello-40px-2">Case Study</div>
+      </div>
+      <div class="component-30-1-C61RwL">
+        <div class="component-4-1-MuOFaI">
+          <div class="about-me-JPJPd2 hoeflertext-regular-normal-cello-90px">About me</div>
+        </div>
+        <div class="component-3-1-MuOFaI">
+          <div class="experienced-in-adobe-photoshop-JjZzcG hoeflertext-regular-normal-cello-45px">
+            Experienced in Customer service with a demonstrated history of working in the retail industry. Skilled in
+            User Experience (UX), User Interface Design, User Research, XD, Figma App, Miro, GitHub, VS-code, Html, CSS,
+            Javascript, Trello, and Adobe Photoshop. Strong healthcare services professional with a UX/UI Design
+            bootcamp focused in UX/UI Design from University of Toronto.
+          </div>
+        </div>
+      </div>
+      <div class="component-27-15-C61RwL" id="component-27-15">
+        <div class="component-2-1-ycEMSB">
+          <div class="group-1-dovjhl">
+            <div class="david-habil-W3zspV hoeflertext-regular-normal-cello-180px">David Habil</div>
+            <div class="ux-ui-designer-W3zspV">UX / UI Designer</div>
+          </div>
+        </div>
+        <div class="component-5-1-ycEMSB">
+          <div class="product-uxui-de-problem-solver-xTgakm hoeflertext-normal-cello-35px">
+            <span class="span0-g9S5xS">Product U</span><span class="span1-g9S5xS">X</span
+            ><span class="span2-g9S5xS">/</span><span class="span3-g9S5xS">UI</span
+            ><span class="span4-g9S5xS"> Designer , Researcher , Creative Thinker, Problem Solver</span>
+          </div>
+        </div>
+      </div>
+      <div class="component-7-1-C61RwL">
+        <div class="projects-vsdTuv hoeflertext-regular-normal-cello-90px">Projects</div>
+      </div>
+      <img class="component-65-1-C61RwL" src="img/component-65---1-1@1x.png" />
+      <div class="icons8-home-C61RwL smart-layers-pointers"></div>
+      <div class="component-31-1-C61RwL">
+        <div class="software-5bt2w0 hoeflertext-regular-normal-cello-90px">Software</div>
+      </div>
+      <div class="component-81-1-C61RwL">
+        <div class="component-64-1-jXeRjZ">
+          <img class="line-1-UmiDsH" src="img/line-1@1x.png" />
+          <div class="component-27-14-UmiDsH">
+            <div class="component-2-1-Bbpwg3">
+              <div class="group-1-EtY3UW">
+                <div class="david-habil-56cpiT hoeflertext-regular-normal-cello-90px">David Habil</div>
+                <div class="ux-ui-designer-56cpiT">UX / UI Designer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="component-80-2-jXeRjZ">
+          <div class="email-davidayadnagubgmailcom-y9OAt8 hoeflertext-normal-cello-30px">
+            <span class="span0-kAUmrs">Email: </span><span class="span1-kAUmrs">David.ayad.nagub@gmail.com</span>
+          </div>
+          <div class="cell-647-517-1700-y9OAt8 hoeflertext-normal-cello-30px">
+            <span class="span0-Nmkvvm">Cell: </span><span class="span1-Nmkvvm">(647) 517-1700</span>
+          </div>
+          <div class="linkedin-httpsw-omindavid-habil-y9OAt8 hoeflertext-normal-cello-30px">
+            <span class="span0-WcSNev">Linkedin: </span
+            ><span class="span1-WcSNev">https://www.linkedin.com/in/david-habil/</span>
+          </div>
+        </div>
+      </div>
+      <a href="#component-27-15">
+        <div class="component-84-1-C61RwL smart-layers-pointers">
+          <img class="path-48-GZ7XPZ" src="img/path-48-1@1x.png" />
+          <img class="path-47-GZ7XPZ" src="img/path-47-1@1x.png" />
+          <img class="path-50-GZ7XPZ" src="img/path-50-1@1x.png" />
+          <img class="path-51-GZ7XPZ" src="img/path-50-1@1x.png" /></div
+      ></a>
+      <div class="humburger-menu-C61RwL smart-layers-pointers">
+        <div class="group-4-xLjche">
+          <img class="path-1-UaXTys" src="img/path-1-1@1x.png" />
+          <img class="path-1-HZqMCa" src="img/path-1-1@1x.png" />
+          <img class="path-1-com63Q" src="img/path-1-2@1x.png" />
+        </div>
+      </div>
+    </div>
+    <div class="home-page-1-3 screen smart-layers-pointers">
+      <div class="component-33-1-C61RwL">
+        <div class="rotato-snapshot-wNNOps"></div>
+        <div class="rotato-snapshot-2-wNNOps">
+          <div class="rotato-snapshot-2-Y3rZpU"></div>
+        </div>
+        <div class="rotato-snapshot-4-wNNOps">
+          <div class="rotato-snapshot-4-uEGenx"></div>
+        </div>
+        <div class="rotato-snapshot-6-wNNOps">
+          <div class="rotato-snapshot-6-pA84sW"></div>
+        </div>
+      </div>
+      <div class="david-C61RwL"><img class="david-zLIjyU" src="img/david-1@1x.png" /></div>
+      <div class="repeat-grid-1-C61RwL smart-layers-pointers">
+        <div class="x01-mrdmCX"><img class="path-2-OnLx9B" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1100-mrdmCX"><img class="path-2-1wXIgY" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2100-mrdmCX"><img class="path-2-LB9Mb2" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3100-mrdmCX"><img class="path-2-CAElDh" src="img/path-2-1000@1x.png" /></div>
+        <div class="x410-mrdmCX"><img class="path-2-GwYv2J" src="img/path-2-1000@1x.png" /></div>
+        <div class="x510-mrdmCX"><img class="path-2-haDEwB" src="img/path-2-1000@1x.png" /></div>
+        <div class="x610-mrdmCX"><img class="path-2-m067QL" src="img/path-2-1000@1x.png" /></div>
+        <div class="x710-mrdmCX"><img class="path-2-YxROqN" src="img/path-2-1000@1x.png" /></div>
+        <div class="x810-mrdmCX"><img class="path-2-GT8wHE" src="img/path-2-1000@1x.png" /></div>
+        <div class="x910-mrdmCX"><img class="path-2-eC0Vpc" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1010-mrdmCX"><img class="path-2-KJ6x6j" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1110-mrdmCX"><img class="path-2-Bo6FHX" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1210-mrdmCX"><img class="path-2-mWv4xl" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1310-mrdmCX"><img class="path-2-RmTuEC" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1410-mrdmCX"><img class="path-2-snDpxx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1510-mrdmCX"><img class="path-2-GNsB7p" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1610-mrdmCX"><img class="path-2-Y8x4nl" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1710-mrdmCX"><img class="path-2-ueDQeb" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1810-mrdmCX"><img class="path-2-7mFZy8" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1910-mrdmCX"><img class="path-2-jWb1xc" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2010-mrdmCX"><img class="path-2-WtufoM" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2110-mrdmCX"><img class="path-2-ovgt79" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2210-mrdmCX"><img class="path-2-Ph3x73" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2310-mrdmCX"><img class="path-2-neADEw" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2410-mrdmCX"><img class="path-2-ra3GpY" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2510-mrdmCX"><img class="path-2-JMiY8W" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2610-mrdmCX"><img class="path-2-sqyTtw" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2710-mrdmCX"><img class="path-2-nHUXXZ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2810-mrdmCX"><img class="path-2-29J5Mx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2910-mrdmCX"><img class="path-2-Tg1Ded" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3010-mrdmCX"><img class="path-2-Kjj0wL" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3110-mrdmCX"><img class="path-2-wiMaO6" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3210-mrdmCX"><img class="path-2-5EcBCL" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3310-mrdmCX"><img class="path-2-AiQk4f" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3410-mrdmCX"><img class="path-2-7Cxl5K" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3510-mrdmCX"><img class="path-2-S8XxX8" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3610-mrdmCX"><img class="path-2-u6fKkZ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3710-mrdmCX"><img class="path-2-6eEu4d" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3810-mrdmCX"><img class="path-2-MXpnoL" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3910-mrdmCX"><img class="path-2-gTgpDP" src="img/path-2-1000@1x.png" /></div>
+        <div class="x405-mrdmCX"><img class="path-2-8PCoCh" src="img/path-2-1000@1x.png" /></div>
+        <div class="x411-mrdmCX"><img class="path-2-LxnGtr" src="img/path-2-1000@1x.png" /></div>
+        <div class="x421-mrdmCX"><img class="path-2-R035va" src="img/path-2-1000@1x.png" /></div>
+        <div class="x431-mrdmCX"><img class="path-2-X9tNFO" src="img/path-2-1000@1x.png" /></div>
+        <div class="x441-mrdmCX"><img class="path-2-xNnlkt" src="img/path-2-1000@1x.png" /></div>
+        <div class="x451-mrdmCX"><img class="path-2-FSXIEt" src="img/path-2-1000@1x.png" /></div>
+        <div class="x461-mrdmCX"><img class="path-2-xqSmGp" src="img/path-2-1000@1x.png" /></div>
+        <div class="x471-mrdmCX"><img class="path-2-GdFZio" src="img/path-2-1000@1x.png" /></div>
+        <div class="x481-mrdmCX"><img class="path-2-FbbGs4" src="img/path-2-1000@1x.png" /></div>
+        <div class="x491-mrdmCX"><img class="path-2-cynRBC" src="img/path-2-1000@1x.png" /></div>
+        <div class="x501-mrdmCX"><img class="path-2-eLSBhk" src="img/path-2-1000@1x.png" /></div>
+        <div class="x511-mrdmCX"><img class="path-2-Qdj79c" src="img/path-2-1000@1x.png" /></div>
+        <div class="x521-mrdmCX"><img class="path-2-qVJpya" src="img/path-2-1000@1x.png" /></div>
+        <div class="x531-mrdmCX"><img class="path-2-E4DaxW" src="img/path-2-1000@1x.png" /></div>
+        <div class="x541-mrdmCX"><img class="path-2-fuboPm" src="img/path-2-1000@1x.png" /></div>
+        <div class="x551-mrdmCX"><img class="path-2-P7SoQM" src="img/path-2-1000@1x.png" /></div>
+        <div class="x561-mrdmCX"><img class="path-2-Wi8iqF" src="img/path-2-1000@1x.png" /></div>
+        <div class="x571-mrdmCX"><img class="path-2-l64ol0" src="img/path-2-1000@1x.png" /></div>
+        <div class="x581-mrdmCX"><img class="path-2-x5NTpZ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x591-mrdmCX"><img class="path-2-oWHTws" src="img/path-2-1000@1x.png" /></div>
+        <div class="x601-mrdmCX"><img class="path-2-1dHhWv" src="img/path-2-1000@1x.png" /></div>
+        <div class="x611-mrdmCX"><img class="path-2-C1kvZu" src="img/path-2-1000@1x.png" /></div>
+        <div class="x621-mrdmCX"><img class="path-2-SSFXhI" src="img/path-2-1000@1x.png" /></div>
+        <div class="x631-mrdmCX"><img class="path-2-NlymUb" src="img/path-2-1000@1x.png" /></div>
+        <div class="x641-mrdmCX"><img class="path-2-00lHpR" src="img/path-2-1000@1x.png" /></div>
+        <div class="x651-mrdmCX"><img class="path-2-jDBFyI" src="img/path-2-1000@1x.png" /></div>
+        <div class="x661-mrdmCX"><img class="path-2-mVWBve" src="img/path-2-1000@1x.png" /></div>
+        <div class="x671-mrdmCX"><img class="path-2-tHHAMk" src="img/path-2-1000@1x.png" /></div>
+        <div class="x681-mrdmCX"><img class="path-2-rFgzlm" src="img/path-2-1000@1x.png" /></div>
+        <div class="x691-mrdmCX"><img class="path-2-llfJUx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x701-mrdmCX"><img class="path-2-Y132d6" src="img/path-2-1000@1x.png" /></div>
+        <div class="x711-mrdmCX"><img class="path-2-xkPTKJ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x721-mrdmCX"><img class="path-2-aTNcJR" src="img/path-2-1000@1x.png" /></div>
+        <div class="x731-mrdmCX"><img class="path-2-z8xUPx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x741-mrdmCX"><img class="path-2-h7osvo" src="img/path-2-1000@1x.png" /></div>
+        <div class="x751-mrdmCX"><img class="path-2-xEvshE" src="img/path-2-1000@1x.png" /></div>
+        <div class="x761-mrdmCX"><img class="path-2-14YQxf" src="img/path-2-1000@1x.png" /></div>
+        <div class="x771-mrdmCX"><img class="path-2-saCVOl" src="img/path-2-1000@1x.png" /></div>
+        <div class="x781-mrdmCX"><img class="path-2-NAePm7" src="img/path-2-1000@1x.png" /></div>
+        <div class="x791-mrdmCX"><img class="path-2-VUTMaU" src="img/path-2-1000@1x.png" /></div>
+        <div class="x801-mrdmCX"><img class="path-2-NaxTpP" src="img/path-2-1000@1x.png" /></div>
+        <div class="x811-mrdmCX"><img class="path-2-UOI5ak" src="img/path-2-1000@1x.png" /></div>
+        <div class="x821-mrdmCX"><img class="path-2-TmKtDC" src="img/path-2-1000@1x.png" /></div>
+        <div class="x831-mrdmCX"><img class="path-2-DunnEV" src="img/path-2-1000@1x.png" /></div>
+        <div class="x841-mrdmCX"><img class="path-2-8GAE8d" src="img/path-2-1000@1x.png" /></div>
+        <div class="x851-mrdmCX"><img class="path-2-L6HbaL" src="img/path-2-1000@1x.png" /></div>
+        <div class="x861-mrdmCX"><img class="path-2-uWT5AB" src="img/path-2-1000@1x.png" /></div>
+        <div class="x871-mrdmCX"><img class="path-2-dnbUk7" src="img/path-2-1000@1x.png" /></div>
+        <div class="x881-mrdmCX"><img class="path-2-qIrxmJ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x891-mrdmCX"><img class="path-2-OlOlFg" src="img/path-2-1000@1x.png" /></div>
+        <div class="x901-mrdmCX"><img class="path-2-reKkGU" src="img/path-2-1000@1x.png" /></div>
+        <div class="x911-mrdmCX"><img class="path-2-oNLy0T" src="img/path-2-1000@1x.png" /></div>
+        <div class="x921-mrdmCX"><img class="path-2-dgeXxu" src="img/path-2-1000@1x.png" /></div>
+        <div class="x931-mrdmCX"><img class="path-2-yxkAaw" src="img/path-2-1000@1x.png" /></div>
+        <div class="x941-mrdmCX"><img class="path-2-PHtZgV" src="img/path-2-1000@1x.png" /></div>
+        <div class="x951-mrdmCX"><img class="path-2-PuHOOU" src="img/path-2-1000@1x.png" /></div>
+        <div class="x961-mrdmCX"><img class="path-2-I0GzP7" src="img/path-2-1000@1x.png" /></div>
+        <div class="x971-mrdmCX"><img class="path-2-zFyaor" src="img/path-2-1000@1x.png" /></div>
+        <div class="x981-mrdmCX"><img class="path-2-NxNhSs" src="img/path-2-1000@1x.png" /></div>
+        <div class="x991-mrdmCX"><img class="path-2-nXWSBv" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1001-mrdmCX"><img class="path-2-rcABgt" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1011-mrdmCX"><img class="path-2-xShATL" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1021-mrdmCX"><img class="path-2-fuelLt" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1031-mrdmCX"><img class="path-2-exOaO8" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1041-mrdmCX"><img class="path-2-VJYN3W" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1051-mrdmCX"><img class="path-2-tC3wOD" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1061-mrdmCX"><img class="path-2-ArzCfx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1071-mrdmCX"><img class="path-2-qpjrBd" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1081-mrdmCX"><img class="path-2-j1Lb6C" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1091-mrdmCX"><img class="path-2-mlZCxc" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1101-mrdmCX"><img class="path-2-giHcwa" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1111-mrdmCX"><img class="path-2-Ur4x2x" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1121-mrdmCX"><img class="path-2-KjRdSx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1131-mrdmCX"><img class="path-2-jAuvLi" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1141-mrdmCX"><img class="path-2-R7cour" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1151-mrdmCX"><img class="path-2-SJJVPY" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1161-mrdmCX"><img class="path-2-EX6xGc" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1171-mrdmCX"><img class="path-2-9NEiMt" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1181-mrdmCX"><img class="path-2-t9JGhg" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1191-mrdmCX"><img class="path-2-MQV09H" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1201-mrdmCX"><img class="path-2-Luimjb" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1211-mrdmCX"><img class="path-2-KNfY1s" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1221-mrdmCX"><img class="path-2-zmVyNt" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1231-mrdmCX"><img class="path-2-ebWY7r" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1241-mrdmCX"><img class="path-2-zajyjx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1251-mrdmCX"><img class="path-2-S4kvSJ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1261-mrdmCX"><img class="path-2-EoDzDX" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1271-mrdmCX"><img class="path-2-xgbYZF" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1281-mrdmCX"><img class="path-2-f1K94g" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1291-mrdmCX"><img class="path-2-l4TUZH" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1301-mrdmCX"><img class="path-2-eI9RuP" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1311-mrdmCX"><img class="path-2-dI2M5Y" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1321-mrdmCX"><img class="path-2-W7uOgn" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1331-mrdmCX"><img class="path-2-2ixUpM" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1341-mrdmCX"><img class="path-2-ajmjDx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1351-mrdmCX"><img class="path-2-UQkxu2" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1361-mrdmCX"><img class="path-2-r2Bcrv" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1371-mrdmCX"><img class="path-2-RFPu5K" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1381-mrdmCX"><img class="path-2-JbQLqs" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1391-mrdmCX"><img class="path-2-Toxu30" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1401-mrdmCX"><img class="path-2-mNjlkT" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1411-mrdmCX"><img class="path-2-5cKFqd" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1421-mrdmCX"><img class="path-2-7hajkG" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1431-mrdmCX"><img class="path-2-qrjWZr" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1441-mrdmCX"><img class="path-2-VZTM2O" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1451-mrdmCX"><img class="path-2-0AfPsg" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1461-mrdmCX"><img class="path-2-uCTBLx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1471-mrdmCX"><img class="path-2-QgA3Vh" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1481-mrdmCX"><img class="path-2-2K2qEx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1491-mrdmCX"><img class="path-2-xusjzX" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1501-mrdmCX"><img class="path-2-2x2uMJ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1511-mrdmCX"><img class="path-2-NvR0HE" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1521-mrdmCX"><img class="path-2-qtqHvR" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1531-mrdmCX"><img class="path-2-nWhEvB" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1541-mrdmCX"><img class="path-2-zennSx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1551-mrdmCX"><img class="path-2-OOxL4f" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1561-mrdmCX"><img class="path-2-cQYpDZ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1571-mrdmCX"><img class="path-2-PHaR6A" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1581-mrdmCX"><img class="path-2-nOKcQx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1591-mrdmCX"><img class="path-2-gQV2ld" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1601-mrdmCX"><img class="path-2-aPWmxC" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1611-mrdmCX"><img class="path-2-0H9vgW" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1621-mrdmCX"><img class="path-2-UVJ3CN" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1631-mrdmCX"><img class="path-2-n1mLyF" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1641-mrdmCX"><img class="path-2-CAFxVN" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1651-mrdmCX"><img class="path-2-244spC" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1661-mrdmCX"><img class="path-2-OlQJtF" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1671-mrdmCX"><img class="path-2-5iSrNA" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1681-mrdmCX"><img class="path-2-7WXrDx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1691-mrdmCX"><img class="path-2-e40Lxe" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1701-mrdmCX"><img class="path-2-aQq2Yo" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1711-mrdmCX"><img class="path-2-ChBMkw" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1721-mrdmCX"><img class="path-2-J2jYJS" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1731-mrdmCX"><img class="path-2-OZhx1A" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1741-mrdmCX"><img class="path-2-KyPiKo" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1751-mrdmCX"><img class="path-2-01Dvkg" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1761-mrdmCX"><img class="path-2-ghi3fz" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1771-mrdmCX"><img class="path-2-gDSnjC" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1781-mrdmCX"><img class="path-2-TJnsmf" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1791-mrdmCX"><img class="path-2-xpMegA" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1801-mrdmCX"><img class="path-2-PDAKlK" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1811-mrdmCX"><img class="path-2-plP7b4" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1821-mrdmCX"><img class="path-2-mDxXrc" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1831-mrdmCX"><img class="path-2-FAQCxQ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1841-mrdmCX"><img class="path-2-Nxvy7F" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1851-mrdmCX"><img class="path-2-7ioYB6" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1861-mrdmCX"><img class="path-2-6ZxFim" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1871-mrdmCX"><img class="path-2-xhkWl3" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1881-mrdmCX"><img class="path-2-tFzHdc" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1891-mrdmCX"><img class="path-2-fNoYQE" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1901-mrdmCX"><img class="path-2-uZxP3n" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1911-mrdmCX"><img class="path-2-QKqrup" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1921-mrdmCX"><img class="path-2-Odv4M9" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1931-mrdmCX"><img class="path-2-ppRi9X" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1941-mrdmCX"><img class="path-2-jmUyJ1" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1951-mrdmCX"><img class="path-2-vZoY5x" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1961-mrdmCX"><img class="path-2-6b46f8" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1971-mrdmCX"><img class="path-2-Bktpmj" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1981-mrdmCX"><img class="path-2-PLA37F" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1991-mrdmCX"><img class="path-2-osGO5N" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2001-mrdmCX"><img class="path-2-zEshFC" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2011-mrdmCX"><img class="path-2-CGwGc7" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2021-mrdmCX"><img class="path-2-x2EnzT" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2031-mrdmCX"><img class="path-2-Ta2ShJ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2041-mrdmCX"><img class="path-2-XcqyQA" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2051-mrdmCX"><img class="path-2-t01dSY" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2061-mrdmCX"><img class="path-2-PWQK3H" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2071-mrdmCX"><img class="path-2-ks2fkk" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2081-mrdmCX"><img class="path-2-tOip8e" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2091-mrdmCX"><img class="path-2-jkuqFg" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2101-mrdmCX"><img class="path-2-8xHxx7" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2111-mrdmCX"><img class="path-2-e4mj6n" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2121-mrdmCX"><img class="path-2-4vV9Ex" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2131-mrdmCX"><img class="path-2-RP4DzI" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2141-mrdmCX"><img class="path-2-VWDUO0" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2151-mrdmCX"><img class="path-2-7rraqU" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2161-mrdmCX"><img class="path-2-4lPOIK" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2171-mrdmCX"><img class="path-2-xONOnx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2181-mrdmCX"><img class="path-2-xyOB4R" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2191-mrdmCX"><img class="path-2-OQRfMN" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2201-mrdmCX"><img class="path-2-acVLLK" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2211-mrdmCX"><img class="path-2-cAfg50" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2221-mrdmCX"><img class="path-2-5KIAbd" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2231-mrdmCX"><img class="path-2-ybHSIr" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2241-mrdmCX"><img class="path-2-8eSP9f" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2251-mrdmCX"><img class="path-2-qQ6Qcx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2261-mrdmCX"><img class="path-2-L2WqWW" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2271-mrdmCX"><img class="path-2-fdg8tb" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2281-mrdmCX"><img class="path-2-LvgJVw" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2291-mrdmCX"><img class="path-2-DdkgSG" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2301-mrdmCX"><img class="path-2-u4uy0a" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2311-mrdmCX"><img class="path-2-i1iQB0" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2321-mrdmCX"><img class="path-2-yGxv2o" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2331-mrdmCX"><img class="path-2-6xCML5" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2341-mrdmCX"><img class="path-2-xlUfIC" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2351-mrdmCX"><img class="path-2-Kxtxja" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2361-mrdmCX"><img class="path-2-vOEWbj" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2371-mrdmCX"><img class="path-2-m419A2" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2381-mrdmCX"><img class="path-2-akNx23" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2391-mrdmCX"><img class="path-2-TngxZt" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2401-mrdmCX"><img class="path-2-DosYxg" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2411-mrdmCX"><img class="path-2-UtL1iM" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2421-mrdmCX"><img class="path-2-dxVjrS" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2431-mrdmCX"><img class="path-2-C8Q788" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2441-mrdmCX"><img class="path-2-kVxehw" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2451-mrdmCX"><img class="path-2-7VaPPD" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2461-mrdmCX"><img class="path-2-a9lL3O" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2471-mrdmCX"><img class="path-2-5sx7VJ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2481-mrdmCX"><img class="path-2-o9xEEz" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2491-mrdmCX"><img class="path-2-S5lwZW" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2501-mrdmCX"><img class="path-2-JEe0Zy" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2511-mrdmCX"><img class="path-2-UKHRxc" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2521-mrdmCX"><img class="path-2-bsKawg" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2531-mrdmCX"><img class="path-2-eKyJGH" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2541-mrdmCX"><img class="path-2-QZxU9Y" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2551-mrdmCX"><img class="path-2-Sq9gax" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2561-mrdmCX"><img class="path-2-5a0YDp" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2571-mrdmCX"><img class="path-2-zrr917" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2581-mrdmCX"><img class="path-2-zxJSX6" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2591-mrdmCX"><img class="path-2-MPolHX" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2601-mrdmCX"><img class="path-2-OJ8OKc" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2611-mrdmCX"><img class="path-2-JZoSTC" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2621-mrdmCX"><img class="path-2-pxC0w6" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2631-mrdmCX"><img class="path-2-JJoBgy" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2641-mrdmCX"><img class="path-2-xakuTK" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2651-mrdmCX"><img class="path-2-L4s49Y" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2661-mrdmCX"><img class="path-2-OwRC1L" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2671-mrdmCX"><img class="path-2-3lDXsE" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2681-mrdmCX"><img class="path-2-3MWipj" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2691-mrdmCX"><img class="path-2-XDm1J0" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2701-mrdmCX"><img class="path-2-CNCbLw" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2711-mrdmCX"><img class="path-2-pNpgBJ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2721-mrdmCX"><img class="path-2-kOV7Q4" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2731-mrdmCX"><img class="path-2-0VReCj" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2741-mrdmCX"><img class="path-2-ilfMWo" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2751-mrdmCX"><img class="path-2-WHyIzW" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2761-mrdmCX"><img class="path-2-Y91n6u" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2771-mrdmCX"><img class="path-2-bqDZyF" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2781-mrdmCX"><img class="path-2-I5e4yX" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2791-mrdmCX"><img class="path-2-2cjrbS" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2801-mrdmCX"><img class="path-2-2zlxfa" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2811-mrdmCX"><img class="path-2-xsrA5l" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2821-mrdmCX"><img class="path-2-h0nDxx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2831-mrdmCX"><img class="path-2-Z81H33" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2841-mrdmCX"><img class="path-2-UrP6IW" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2851-mrdmCX"><img class="path-2-2E8dun" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2861-mrdmCX"><img class="path-2-xzGSxl" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2871-mrdmCX"><img class="path-2-I2RlV9" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2881-mrdmCX"><img class="path-2-0i4H8K" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2891-mrdmCX"><img class="path-2-YB523j" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2901-mrdmCX"><img class="path-2-QKkLox" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2911-mrdmCX"><img class="path-2-rZz26W" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2921-mrdmCX"><img class="path-2-dhhl9z" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2931-mrdmCX"><img class="path-2-pjXa1e" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2941-mrdmCX"><img class="path-2-xKs8qr" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2951-mrdmCX"><img class="path-2-QXFiXV" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2961-mrdmCX"><img class="path-2-0zwbd6" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2971-mrdmCX"><img class="path-2-yEkDFA" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2981-mrdmCX"><img class="path-2-9wExYK" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2991-mrdmCX"><img class="path-2-OCP7NY" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3001-mrdmCX"><img class="path-2-2B8JQZ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3011-mrdmCX"><img class="path-2-Ux2rZu" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3021-mrdmCX"><img class="path-2-ECDHQy" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3031-mrdmCX"><img class="path-2-m9j6P8" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3041-mrdmCX"><img class="path-2-WGG5BU" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3051-mrdmCX"><img class="path-2-rAQ1HV" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3061-mrdmCX"><img class="path-2-3Md6jd" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3071-mrdmCX"><img class="path-2-2zhuFy" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3081-mrdmCX"><img class="path-2-rxWPLx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3091-mrdmCX"><img class="path-2-seFEuL" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3101-mrdmCX"><img class="path-2-tIJeiJ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3111-mrdmCX"><img class="path-2-Bxv2AH" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3121-mrdmCX"><img class="path-2-3MHQik" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3131-mrdmCX"><img class="path-2-GWeADh" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3141-mrdmCX"><img class="path-2-VXbk5K" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3151-mrdmCX"><img class="path-2-wKejZT" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3161-mrdmCX"><img class="path-2-har9Nt" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3171-mrdmCX"><img class="path-2-FQaXWy" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3181-mrdmCX"><img class="path-2-e24TNl" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3191-mrdmCX"><img class="path-2-629xKV" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3201-mrdmCX"><img class="path-2-Sp6xBK" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3211-mrdmCX"><img class="path-2-RsRGDR" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3221-mrdmCX"><img class="path-2-OnBIRb" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3231-mrdmCX"><img class="path-2-rhrxYx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3241-mrdmCX"><img class="path-2-eZ59vJ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3251-mrdmCX"><img class="path-2-vPPM9Y" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3261-mrdmCX"><img class="path-2-Ha7cK4" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3271-mrdmCX"><img class="path-2-2xw1Bc" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3281-mrdmCX"><img class="path-2-rUqx0q" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3291-mrdmCX"><img class="path-2-PcxTpC" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3301-mrdmCX"><img class="path-2-CxQYIN" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3311-mrdmCX"><img class="path-2-NmIdX2" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3321-mrdmCX"><img class="path-2-7tC9GQ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3331-mrdmCX"><img class="path-2-JzL5xq" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3341-mrdmCX"><img class="path-2-BqK6kQ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3351-mrdmCX"><img class="path-2-hMVXDe" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3361-mrdmCX"><img class="path-2-ROKxC5" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3371-mrdmCX"><img class="path-2-ZswG9X" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3381-mrdmCX"><img class="path-2-ExQsYx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3391-mrdmCX"><img class="path-2-9S7FYH" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3401-mrdmCX"><img class="path-2-ONeQGe" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3411-mrdmCX"><img class="path-2-p83DpH" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3421-mrdmCX"><img class="path-2-a9ZOhD" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3431-mrdmCX"><img class="path-2-JFK85F" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3441-mrdmCX"><img class="path-2-XdsiEB" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3451-mrdmCX"><img class="path-2-Rc4DwB" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3461-mrdmCX"><img class="path-2-ky9u7n" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3471-mrdmCX"><img class="path-2-gwBUnD" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3481-mrdmCX"><img class="path-2-Bt9bxv" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3491-mrdmCX"><img class="path-2-VWC4wx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3501-mrdmCX"><img class="path-2-ssuxIM" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3511-mrdmCX"><img class="path-2-kyZvoR" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3521-mrdmCX"><img class="path-2-PreS7Q" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3531-mrdmCX"><img class="path-2-P8UAA6" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3541-mrdmCX"><img class="path-2-inbN9V" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3551-mrdmCX"><img class="path-2-wVG5Uf" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3561-mrdmCX"><img class="path-2-VRzDBh" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3571-mrdmCX"><img class="path-2-v8e0ii" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3581-mrdmCX"><img class="path-2-rF46iu" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3591-mrdmCX"><img class="path-2-u0t1ra" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3601-mrdmCX"><img class="path-2-YE6n77" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3611-mrdmCX"><img class="path-2-7ieJbk" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3621-mrdmCX"><img class="path-2-D2ZxAs" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3631-mrdmCX"><img class="path-2-lAzM6P" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3641-mrdmCX"><img class="path-2-WPmzj8" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3651-mrdmCX"><img class="path-2-uzeshx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3661-mrdmCX"><img class="path-2-OlJaFr" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3671-mrdmCX"><img class="path-2-sEXp2v" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3681-mrdmCX"><img class="path-2-3xUrWk" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3691-mrdmCX"><img class="path-2-3MUvW7" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3701-mrdmCX"><img class="path-2-TTqkpv" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3711-mrdmCX"><img class="path-2-iQIIxp" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3721-mrdmCX"><img class="path-2-ef1zt4" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3731-mrdmCX"><img class="path-2-jxKZ2i" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3741-mrdmCX"><img class="path-2-WaUMG6" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3751-mrdmCX"><img class="path-2-yG2ICK" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3761-mrdmCX"><img class="path-2-S2BIxx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3771-mrdmCX"><img class="path-2-x9wKqg" src="img/path-2-1000@1x.png" /></div>
+      </div>
+      <div class="component-5-2-C61RwL">
+        <div class="e-plan-mobile-a-aily-activities-K2UgDK hoeflertext-normal-cello-35px">
+          <span class="span0-OGpy8v">E-plan Mobile App:</span><span class="span1-OGpy8v"> ​<br /><br /></span
+          ><span class="span2-OGpy8v"
+            >A part of a group project to design or to add a new feature to an existing app. E-plan is new designed app
+            based on user research methodology to help people manage and plan daily activities</span
+          >
+        </div>
+      </div>
+      <div class="component-8-1-C61RwL border-1px-dove-gray">
+        <div class="e-plan-78wuxl hoeflertext-regular-normal-white-40px">E-Plan</div>
+      </div>
+      <div class="component-8-2-C61RwL border-1px-dove-gray smart-layers-pointers">
+        <div class="coming-soon-kP2rIN hoeflertext-regular-normal-cello-40px-3">Coming soon</div>
+      </div>
+      <div class="component-8-3-C61RwL border-1px-dove-gray smart-layers-pointers">
+        <div class="fotocanorg-fr332x hoeflertext-regular-normal-cello-40px-2">Fotocan.org</div>
+      </div>
+      <div class="component-8-4-C61RwL border-1px-dove-gray smart-layers-pointers">
+        <div class="x-case-study-4hGSDg hoeflertext-regular-normal-cello-40px-2">Case Study</div>
+      </div>
+      <div class="component-30-1-C61RwL">
+        <div class="component-4-1-MuOFaI">
+          <div class="about-me-JPJPd2 hoeflertext-regular-normal-cello-90px">About me</div>
+        </div>
+        <div class="component-3-1-MuOFaI">
+          <div class="experienced-in-adobe-photoshop-JjZzcG hoeflertext-regular-normal-cello-45px">
+            Experienced in Customer service with a demonstrated history of working in the retail industry. Skilled in
+            User Experience (UX), User Interface Design, User Research, XD, Figma App, Miro, GitHub, VS-code, Html, CSS,
+            Javascript, Trello, and Adobe Photoshop. Strong healthcare services professional with a UX/UI Design
+            bootcamp focused in UX/UI Design from University of Toronto.
+          </div>
+        </div>
+      </div>
+      <div class="component-27-151-C61RwL" id="component-27-151">
+        <div class="component-2-1-oqzcPg">
+          <div class="group-1-Dqm0Cx">
+            <div class="david-habil-wSBeFX hoeflertext-regular-normal-cello-180px">David Habil</div>
+            <div class="ux-ui-designer-wSBeFX">UX / UI Designer</div>
+          </div>
+        </div>
+        <div class="component-5-1-oqzcPg">
+          <div class="product-uxui-de-problem-solver-kabEAF hoeflertext-normal-cello-35px">
+            <span class="span0-uW0IkE">Product U</span><span class="span1-uW0IkE">X</span
+            ><span class="span2-uW0IkE">/</span><span class="span3-uW0IkE">UI</span
+            ><span class="span4-uW0IkE"> Designer , Researcher , Creative Thinker, Problem Solver</span>
+          </div>
+        </div>
+      </div>
+      <div class="component-7-1-C61RwL">
+        <div class="projects-vsdTuv hoeflertext-regular-normal-cello-90px">Projects</div>
+      </div>
+      <img class="component-65-1-C61RwL" src="img/component-65---1-1@1x.png" />
+      <div class="icons8-home-C61RwL"></div>
+      <div class="component-31-1-C61RwL">
+        <div class="software-5bt2w0 hoeflertext-regular-normal-cello-90px">Software</div>
+      </div>
+      <div class="component-81-1-C61RwL">
+        <div class="component-64-1-jXeRjZ">
+          <img class="line-1-UmiDsH" src="img/line-1-1@1x.png" />
+          <div class="component-27-14-UmiDsH">
+            <div class="component-2-1-Bbpwg3">
+              <div class="group-1-EtY3UW">
+                <div class="david-habil-56cpiT hoeflertext-regular-normal-cello-90px">David Habil</div>
+                <div class="ux-ui-designer-56cpiT">UX / UI Designer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="component-80-2-jXeRjZ">
+          <div class="email-davidayadnagubgmailcom-y9OAt8 hoeflertext-normal-cello-30px">
+            <span class="span0-kAUmrs">Email: </span><span class="span1-kAUmrs">David.ayad.nagub@gmail.com</span>
+          </div>
+          <div class="cell-647-517-1700-y9OAt8 hoeflertext-normal-cello-30px">
+            <span class="span0-Nmkvvm">Cell: </span><span class="span1-Nmkvvm">(647) 517-1700</span>
+          </div>
+          <div class="linkedin-httpsw-omindavid-habil-y9OAt8 hoeflertext-normal-cello-30px">
+            <span class="span0-WcSNev">Linkedin: </span
+            ><span class="span1-WcSNev">https://www.linkedin.com/in/david-habil/</span>
+          </div>
+        </div>
+      </div>
+      <a href="#component-27-151">
+        <div class="component-84-1-C61RwL smart-layers-pointers">
+          <img class="path-48-GZ7XPZ" src="img/path-48-1@1x.png" />
+          <img class="path-47-GZ7XPZ" src="img/path-47-1@1x.png" />
+          <img class="path-50-GZ7XPZ" src="img/path-50-1@1x.png" />
+          <img class="path-51-GZ7XPZ" src="img/path-50-1@1x.png" /></div
+      ></a>
+      <div class="humburger-menu-C61RwL">
+        <div class="group-4-xLjche">
+          <img class="path-1-UaXTys" src="img/path-1-1@1x.png" />
+          <img class="path-1-HZqMCa" src="img/path-1-1@1x.png" />
+          <img class="path-1-com63Q" src="img/path-1-2@1x.png" />
+        </div>
+      </div>
+    </div>
+    <div class="home-page-1-4 screen smart-layers-pointers">
+      <div class="component-33-1-C61RwL">
+        <div class="rotato-snapshot-wNNOps"></div>
+        <div class="rotato-snapshot-2-wNNOps">
+          <div class="rotato-snapshot-2-Y3rZpU">
+            <img class="rotato-snapshot-2-B5stlr" src="img/rotato-snapshot-2-2@1x.png" />
+          </div>
+        </div>
+        <img class="rotato-snapshot-4-wNNOps" src="img/rotato-snapshot-4-2@1x.png" />
+        <div class="rotato-snapshot-6-wNNOps">
+          <div class="rotato-snapshot-6-pA84sW"></div>
+        </div>
+      </div>
+      <div class="david-C61RwL"></div>
+      <div class="repeat-grid-1-C61RwL smart-layers-pointers">
+        <div class="x02-mrdmCX"><img class="path-2-WSmxxQ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1102-mrdmCX"><img class="path-2-7fFV8F" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2102-mrdmCX"><img class="path-2-AplgTH" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3102-mrdmCX"><img class="path-2-izucuj" src="img/path-2-1000@1x.png" /></div>
+        <div class="x412-mrdmCX"><img class="path-2-xJv5sb" src="img/path-2-1000@1x.png" /></div>
+        <div class="x512-mrdmCX"><img class="path-2-dzxLBp" src="img/path-2-1000@1x.png" /></div>
+        <div class="x612-mrdmCX"><img class="path-2-dEW25m" src="img/path-2-1000@1x.png" /></div>
+        <div class="x712-mrdmCX"><img class="path-2-V3W3v2" src="img/path-2-1000@1x.png" /></div>
+        <div class="x812-mrdmCX"><img class="path-2-Bp0HwK" src="img/path-2-1000@1x.png" /></div>
+        <div class="x912-mrdmCX"><img class="path-2-aJw2qR" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1012-mrdmCX"><img class="path-2-UoTxcI" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1112-mrdmCX"><img class="path-2-eRAyLM" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1212-mrdmCX"><img class="path-2-eoKwpq" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1312-mrdmCX"><img class="path-2-eKyrgh" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1412-mrdmCX"><img class="path-2-6O78Sz" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1512-mrdmCX"><img class="path-2-I2S20y" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1612-mrdmCX"><img class="path-2-5dMZfZ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1712-mrdmCX"><img class="path-2-blnrtl" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1812-mrdmCX"><img class="path-2-IQMc8y" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1912-mrdmCX"><img class="path-2-EQQoBk" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2012-mrdmCX"><img class="path-2-rbpYNJ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2112-mrdmCX"><img class="path-2-THr0x2" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2212-mrdmCX"><img class="path-2-FZsORJ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2312-mrdmCX"><img class="path-2-xNTSXW" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2412-mrdmCX"><img class="path-2-hHqI6C" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2512-mrdmCX"><img class="path-2-Yl3E2O" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2612-mrdmCX"><img class="path-2-xmr59A" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2712-mrdmCX"><img class="path-2-3z6AZA" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2812-mrdmCX"><img class="path-2-M4rqML" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2912-mrdmCX"><img class="path-2-7dVIYt" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3012-mrdmCX"><img class="path-2-sARwrn" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3112-mrdmCX"><img class="path-2-s0Lxmw" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3212-mrdmCX"><img class="path-2-7REwqI" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3312-mrdmCX"><img class="path-2-W93qTr" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3412-mrdmCX"><img class="path-2-S9zEKP" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3512-mrdmCX"><img class="path-2-zQx9q0" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3612-mrdmCX"><img class="path-2-Dtm3xD" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3712-mrdmCX"><img class="path-2-DOPc9k" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3811-mrdmCX"><img class="path-2-LSFFqN" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3911-mrdmCX"><img class="path-2-JNdAxg" src="img/path-2-1000@1x.png" /></div>
+        <div class="x406-mrdmCX"><img class="path-2-5SO6Y6" src="img/path-2-1000@1x.png" /></div>
+        <div class="x413-mrdmCX"><img class="path-2-FDHIoX" src="img/path-2-1000@1x.png" /></div>
+        <div class="x422-mrdmCX"><img class="path-2-hgVt9n" src="img/path-2-1000@1x.png" /></div>
+        <div class="x432-mrdmCX"><img class="path-2-hbC3Ed" src="img/path-2-1000@1x.png" /></div>
+        <div class="x442-mrdmCX"><img class="path-2-gcr2YQ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x452-mrdmCX"><img class="path-2-SsuKmQ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x462-mrdmCX"><img class="path-2-rXzW2c" src="img/path-2-1000@1x.png" /></div>
+        <div class="x472-mrdmCX"><img class="path-2-XvKtP7" src="img/path-2-1000@1x.png" /></div>
+        <div class="x482-mrdmCX"><img class="path-2-XR8W7T" src="img/path-2-1000@1x.png" /></div>
+        <div class="x492-mrdmCX"><img class="path-2-N4ZmhR" src="img/path-2-1000@1x.png" /></div>
+        <div class="x502-mrdmCX"><img class="path-2-j4Dgb9" src="img/path-2-1000@1x.png" /></div>
+        <div class="x513-mrdmCX"><img class="path-2-hQ4RZ0" src="img/path-2-1000@1x.png" /></div>
+        <div class="x522-mrdmCX"><img class="path-2-nZGe0b" src="img/path-2-1000@1x.png" /></div>
+        <div class="x532-mrdmCX"><img class="path-2-PvV2Ek" src="img/path-2-1000@1x.png" /></div>
+        <div class="x542-mrdmCX"><img class="path-2-x3qZZD" src="img/path-2-1000@1x.png" /></div>
+        <div class="x552-mrdmCX"><img class="path-2-nxfxry" src="img/path-2-1000@1x.png" /></div>
+        <div class="x562-mrdmCX"><img class="path-2-WJ1ILC" src="img/path-2-1000@1x.png" /></div>
+        <div class="x572-mrdmCX"><img class="path-2-uaBeuS" src="img/path-2-1000@1x.png" /></div>
+        <div class="x582-mrdmCX"><img class="path-2-O9aEuT" src="img/path-2-1000@1x.png" /></div>
+        <div class="x592-mrdmCX"><img class="path-2-WzUtIe" src="img/path-2-1000@1x.png" /></div>
+        <div class="x602-mrdmCX"><img class="path-2-RlUPe8" src="img/path-2-1000@1x.png" /></div>
+        <div class="x613-mrdmCX"><img class="path-2-MOZaIO" src="img/path-2-1000@1x.png" /></div>
+        <div class="x622-mrdmCX"><img class="path-2-x0n0CX" src="img/path-2-1000@1x.png" /></div>
+        <div class="x632-mrdmCX"><img class="path-2-Uof0xx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x642-mrdmCX"><img class="path-2-68SLms" src="img/path-2-1000@1x.png" /></div>
+        <div class="x652-mrdmCX"><img class="path-2-B0VQ4U" src="img/path-2-1000@1x.png" /></div>
+        <div class="x662-mrdmCX"><img class="path-2-CJ3i1g" src="img/path-2-1000@1x.png" /></div>
+        <div class="x672-mrdmCX"><img class="path-2-wNKasx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x682-mrdmCX"><img class="path-2-zVMigz" src="img/path-2-1000@1x.png" /></div>
+        <div class="x692-mrdmCX"><img class="path-2-CmnoNr" src="img/path-2-1000@1x.png" /></div>
+        <div class="x702-mrdmCX"><img class="path-2-YrS7QD" src="img/path-2-1000@1x.png" /></div>
+        <div class="x713-mrdmCX"><img class="path-2-VSVR9t" src="img/path-2-1000@1x.png" /></div>
+        <div class="x722-mrdmCX"><img class="path-2-xNnF0q" src="img/path-2-1000@1x.png" /></div>
+        <div class="x732-mrdmCX"><img class="path-2-NHUWyN" src="img/path-2-1000@1x.png" /></div>
+        <div class="x742-mrdmCX"><img class="path-2-ZxcnQV" src="img/path-2-1000@1x.png" /></div>
+        <div class="x752-mrdmCX"><img class="path-2-Rw83XT" src="img/path-2-1000@1x.png" /></div>
+        <div class="x762-mrdmCX"><img class="path-2-lM1o4v" src="img/path-2-1000@1x.png" /></div>
+        <div class="x772-mrdmCX"><img class="path-2-ToPeXg" src="img/path-2-1000@1x.png" /></div>
+        <div class="x782-mrdmCX"><img class="path-2-hg7zk1" src="img/path-2-1000@1x.png" /></div>
+        <div class="x792-mrdmCX"><img class="path-2-c6THkP" src="img/path-2-1000@1x.png" /></div>
+        <div class="x802-mrdmCX"><img class="path-2-t9pxdH" src="img/path-2-1000@1x.png" /></div>
+        <div class="x813-mrdmCX"><img class="path-2-FQFKx1" src="img/path-2-1000@1x.png" /></div>
+        <div class="x822-mrdmCX"><img class="path-2-C624LT" src="img/path-2-1000@1x.png" /></div>
+        <div class="x832-mrdmCX"><img class="path-2-EJLxqN" src="img/path-2-1000@1x.png" /></div>
+        <div class="x842-mrdmCX"><img class="path-2-Hx96aj" src="img/path-2-1000@1x.png" /></div>
+        <div class="x852-mrdmCX"><img class="path-2-s3iKnn" src="img/path-2-1000@1x.png" /></div>
+        <div class="x862-mrdmCX"><img class="path-2-9p7pRT" src="img/path-2-1000@1x.png" /></div>
+        <div class="x872-mrdmCX"><img class="path-2-tgqxfe" src="img/path-2-1000@1x.png" /></div>
+        <div class="x882-mrdmCX"><img class="path-2-TxnM30" src="img/path-2-1000@1x.png" /></div>
+        <div class="x892-mrdmCX"><img class="path-2-UFCcv1" src="img/path-2-1000@1x.png" /></div>
+        <div class="x902-mrdmCX"><img class="path-2-x6jXmr" src="img/path-2-1000@1x.png" /></div>
+        <div class="x913-mrdmCX"><img class="path-2-utiL9f" src="img/path-2-1000@1x.png" /></div>
+        <div class="x922-mrdmCX"><img class="path-2-e9xMOv" src="img/path-2-1000@1x.png" /></div>
+        <div class="x932-mrdmCX"><img class="path-2-ASzoDw" src="img/path-2-1000@1x.png" /></div>
+        <div class="x942-mrdmCX"><img class="path-2-UsVFPd" src="img/path-2-1000@1x.png" /></div>
+        <div class="x952-mrdmCX"><img class="path-2-VVZZ7j" src="img/path-2-1000@1x.png" /></div>
+        <div class="x962-mrdmCX"><img class="path-2-4rsqyc" src="img/path-2-1000@1x.png" /></div>
+        <div class="x972-mrdmCX"><img class="path-2-7KeHRS" src="img/path-2-1000@1x.png" /></div>
+        <div class="x982-mrdmCX"><img class="path-2-qm0QQU" src="img/path-2-1000@1x.png" /></div>
+        <div class="x992-mrdmCX"><img class="path-2-AyfzXA" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1002-mrdmCX"><img class="path-2-rx0kTM" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1013-mrdmCX"><img class="path-2-snnvC3" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1022-mrdmCX"><img class="path-2-ELvYey" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1032-mrdmCX"><img class="path-2-AlRbJg" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1042-mrdmCX"><img class="path-2-rHcowA" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1052-mrdmCX"><img class="path-2-ix3ixu" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1062-mrdmCX"><img class="path-2-RH8TQb" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1072-mrdmCX"><img class="path-2-xlxugg" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1082-mrdmCX"><img class="path-2-Bfoxu0" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1092-mrdmCX"><img class="path-2-3frpeq" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1103-mrdmCX"><img class="path-2-9HmjBj" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1113-mrdmCX"><img class="path-2-EXnSvm" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1122-mrdmCX"><img class="path-2-A0VC0d" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1132-mrdmCX"><img class="path-2-UIvtzb" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1142-mrdmCX"><img class="path-2-eScgHb" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1152-mrdmCX"><img class="path-2-MoTFIE" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1162-mrdmCX"><img class="path-2-jqbBrX" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1172-mrdmCX"><img class="path-2-NEU3dv" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1182-mrdmCX"><img class="path-2-ddEwx8" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1192-mrdmCX"><img class="path-2-pAHH3x" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1202-mrdmCX"><img class="path-2-vC5YgK" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1213-mrdmCX"><img class="path-2-1ixQtx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1222-mrdmCX"><img class="path-2-Xt5SXl" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1232-mrdmCX"><img class="path-2-hV0uJC" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1242-mrdmCX"><img class="path-2-pPafjx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1252-mrdmCX"><img class="path-2-RNYiL7" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1262-mrdmCX"><img class="path-2-b4xfxD" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1272-mrdmCX"><img class="path-2-F63ppy" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1282-mrdmCX"><img class="path-2-kbauKX" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1292-mrdmCX"><img class="path-2-Ua3uVj" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1302-mrdmCX"><img class="path-2-CSEDPf" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1313-mrdmCX"><img class="path-2-lGm2nG" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1322-mrdmCX"><img class="path-2-k9fAuv" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1332-mrdmCX"><img class="path-2-tUlR01" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1342-mrdmCX"><img class="path-2-GgBIZm" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1352-mrdmCX"><img class="path-2-DpHgJO" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1362-mrdmCX"><img class="path-2-FY3MMH" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1372-mrdmCX"><img class="path-2-pG0lWD" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1382-mrdmCX"><img class="path-2-En9xOy" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1392-mrdmCX"><img class="path-2-zWMdSm" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1402-mrdmCX"><img class="path-2-yLNRLr" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1413-mrdmCX"><img class="path-2-haEOox" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1422-mrdmCX"><img class="path-2-xkrnHd" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1432-mrdmCX"><img class="path-2-7yefIz" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1442-mrdmCX"><img class="path-2-iW45HV" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1452-mrdmCX"><img class="path-2-FGEuwm" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1462-mrdmCX"><img class="path-2-zKZmxL" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1472-mrdmCX"><img class="path-2-eazZQr" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1482-mrdmCX"><img class="path-2-HkOlPC" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1492-mrdmCX"><img class="path-2-5lSpHX" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1502-mrdmCX"><img class="path-2-JQKwK0" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1513-mrdmCX"><img class="path-2-mo6lj6" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1522-mrdmCX"><img class="path-2-u3SRbJ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1532-mrdmCX"><img class="path-2-cMWsfb" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1542-mrdmCX"><img class="path-2-xsrRo9" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1552-mrdmCX"><img class="path-2-vyTlxE" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1562-mrdmCX"><img class="path-2-FK8wir" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1572-mrdmCX"><img class="path-2-Mfv0Cd" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1582-mrdmCX"><img class="path-2-hzZSGd" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1592-mrdmCX"><img class="path-2-5SXo88" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1602-mrdmCX"><img class="path-2-fTrlJP" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1613-mrdmCX"><img class="path-2-SNrtwO" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1622-mrdmCX"><img class="path-2-x3fvdK" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1632-mrdmCX"><img class="path-2-wnD5bn" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1642-mrdmCX"><img class="path-2-08CxE2" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1652-mrdmCX"><img class="path-2-NqtOly" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1662-mrdmCX"><img class="path-2-Qe6Q4w" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1672-mrdmCX"><img class="path-2-oTzPtB" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1682-mrdmCX"><img class="path-2-2dQBIt" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1692-mrdmCX"><img class="path-2-TARxdp" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1702-mrdmCX"><img class="path-2-CKZBlo" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1713-mrdmCX"><img class="path-2-l2HLmc" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1722-mrdmCX"><img class="path-2-uTqFLp" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1732-mrdmCX"><img class="path-2-ZJ9tZE" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1742-mrdmCX"><img class="path-2-Skw1YH" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1752-mrdmCX"><img class="path-2-kDXfZp" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1762-mrdmCX"><img class="path-2-aD0wdA" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1772-mrdmCX"><img class="path-2-mMQ5g2" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1782-mrdmCX"><img class="path-2-SVz3Y2" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1792-mrdmCX"><img class="path-2-2ZilL5" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1802-mrdmCX"><img class="path-2-7xVs49" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1813-mrdmCX"><img class="path-2-pbwqpV" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1822-mrdmCX"><img class="path-2-NHN5WJ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1832-mrdmCX"><img class="path-2-xsWIYw" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1842-mrdmCX"><img class="path-2-KUCySx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1852-mrdmCX"><img class="path-2-T7zRPo" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1862-mrdmCX"><img class="path-2-hbOrXB" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1872-mrdmCX"><img class="path-2-xrdp23" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1882-mrdmCX"><img class="path-2-yq108o" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1892-mrdmCX"><img class="path-2-DKUvK2" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1902-mrdmCX"><img class="path-2-jslhbh" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1913-mrdmCX"><img class="path-2-w7N5Cl" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1922-mrdmCX"><img class="path-2-7ZUrx0" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1932-mrdmCX"><img class="path-2-7H1xtx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1942-mrdmCX"><img class="path-2-SIFZXI" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1952-mrdmCX"><img class="path-2-0lsCuW" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1962-mrdmCX"><img class="path-2-dO2C0n" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1972-mrdmCX"><img class="path-2-Y1CsSx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1982-mrdmCX"><img class="path-2-wIjyu2" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1992-mrdmCX"><img class="path-2-Dd57O4" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2002-mrdmCX"><img class="path-2-nhx0Yg" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2013-mrdmCX"><img class="path-2-1A9VIQ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2022-mrdmCX"><img class="path-2-AXmt6O" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2032-mrdmCX"><img class="path-2-FnbVb1" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2042-mrdmCX"><img class="path-2-holAcg" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2052-mrdmCX"><img class="path-2-YipqcP" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2062-mrdmCX"><img class="path-2-frOuq0" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2072-mrdmCX"><img class="path-2-8x0dDZ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2082-mrdmCX"><img class="path-2-wqhHIe" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2092-mrdmCX"><img class="path-2-p3w1Uz" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2103-mrdmCX"><img class="path-2-LbbtWT" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2113-mrdmCX"><img class="path-2-ORl7nx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2122-mrdmCX"><img class="path-2-fYE1ly" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2132-mrdmCX"><img class="path-2-gGGE93" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2142-mrdmCX"><img class="path-2-lx33tM" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2152-mrdmCX"><img class="path-2-xpiUdL" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2162-mrdmCX"><img class="path-2-QfTY7Z" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2172-mrdmCX"><img class="path-2-EyR2jf" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2182-mrdmCX"><img class="path-2-Yxh7LM" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2192-mrdmCX"><img class="path-2-1VAPfP" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2202-mrdmCX"><img class="path-2-SfvcJt" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2213-mrdmCX"><img class="path-2-8Zfjox" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2222-mrdmCX"><img class="path-2-svTHja" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2232-mrdmCX"><img class="path-2-Ou30MN" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2242-mrdmCX"><img class="path-2-5H6uoC" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2252-mrdmCX"><img class="path-2-3JLIPd" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2262-mrdmCX"><img class="path-2-o5n1jf" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2272-mrdmCX"><img class="path-2-FdYcNT" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2282-mrdmCX"><img class="path-2-Aehf7x" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2292-mrdmCX"><img class="path-2-P81Eit" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2302-mrdmCX"><img class="path-2-BU1NRv" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2313-mrdmCX"><img class="path-2-0gOk3k" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2322-mrdmCX"><img class="path-2-HGPknq" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2332-mrdmCX"><img class="path-2-W9MiFF" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2342-mrdmCX"><img class="path-2-OkhXCw" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2352-mrdmCX"><img class="path-2-Ej3LOs" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2362-mrdmCX"><img class="path-2-SmZjjk" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2372-mrdmCX"><img class="path-2-kn6SwJ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2382-mrdmCX"><img class="path-2-edpFB0" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2392-mrdmCX"><img class="path-2-HxnPLi" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2402-mrdmCX"><img class="path-2-AGFyOp" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2413-mrdmCX"><img class="path-2-KIgJcm" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2422-mrdmCX"><img class="path-2-hfee3d" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2432-mrdmCX"><img class="path-2-WWBsvU" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2442-mrdmCX"><img class="path-2-QaTA9d" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2452-mrdmCX"><img class="path-2-R2Jm5i" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2462-mrdmCX"><img class="path-2-JgohDD" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2472-mrdmCX"><img class="path-2-ldZ5CO" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2482-mrdmCX"><img class="path-2-KL9YlA" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2492-mrdmCX"><img class="path-2-cta2sf" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2502-mrdmCX"><img class="path-2-Xodcur" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2513-mrdmCX"><img class="path-2-H36wxX" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2522-mrdmCX"><img class="path-2-F3Fz3n" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2532-mrdmCX"><img class="path-2-UgFChP" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2542-mrdmCX"><img class="path-2-nVHxyx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2552-mrdmCX"><img class="path-2-XgFWxu" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2562-mrdmCX"><img class="path-2-jSECBw" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2572-mrdmCX"><img class="path-2-yFrlf9" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2582-mrdmCX"><img class="path-2-gwrLKs" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2592-mrdmCX"><img class="path-2-vj69Do" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2602-mrdmCX"><img class="path-2-ZFUjUg" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2613-mrdmCX"><img class="path-2-rfKCGL" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2622-mrdmCX"><img class="path-2-juSxZA" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2632-mrdmCX"><img class="path-2-dQtY8x" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2642-mrdmCX"><img class="path-2-C6Yh6I" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2652-mrdmCX"><img class="path-2-zxnPlU" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2662-mrdmCX"><img class="path-2-r1fG3t" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2672-mrdmCX"><img class="path-2-G6xAPx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2682-mrdmCX"><img class="path-2-tBHfyx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2692-mrdmCX"><img class="path-2-ohTgph" src="img/path-2-1000@1x.png" /></div>
+      </div>
+      <div class="component-5-2-C61RwL">
+        <div class="e-plan-mobile-a-aily-activities-K2UgDK hoeflertext-normal-cello-35px">
+          <span class="span0-OGpy8v">E-plan Mobile App:</span><span class="span1-OGpy8v"> ​<br /><br /></span
+          ><span class="span2-OGpy8v"
+            >A part of a group project to design or to add a new feature to an existing app. E-plan is new designed app
+            based on user research methodology to help people manage and plan daily activities</span
+          >
+        </div>
+      </div>
+      <div class="component-8-1-C61RwL border-1px-dove-gray">
+        <div class="e-plan-78wuxl hoeflertext-regular-normal-white-40px">E-Plan</div>
+      </div>
+      <div class="component-8-2-C61RwL border-1px-dove-gray">
+        <div class="coming-soon-kP2rIN hoeflertext-regular-normal-cello-40px-3">Coming soon</div>
+      </div>
+      <div class="component-8-3-C61RwL border-1px-dove-gray">
+        <div class="fotocanorg-fr332x hoeflertext-regular-normal-cello-40px-2">Fotocan.org</div>
+      </div>
+      <div class="component-8-4-C61RwL border-1px-dove-gray bp2-animate-enter smart-layers-pointers">
+        <div class="x-case-study-4hGSDg hoeflertext-regular-normal-cello-40px-2">Case Study</div>
+      </div>
+      <div class="component-30-1-C61RwL">
+        <div class="component-4-1-MuOFaI">
+          <div class="about-me-JPJPd2 hoeflertext-regular-normal-cello-90px">About me</div>
+        </div>
+        <div class="component-3-1-MuOFaI">
+          <div class="experienced-in-adobe-photoshop-JjZzcG hoeflertext-regular-normal-cello-45px">
+            Experienced in Customer service with a demonstrated history of working in the retail industry. Skilled in
+            User Experience (UX), User Interface Design, User Research, XD, Figma App, Miro, GitHub, VS-code, Html, CSS,
+            Javascript, Trello, and Adobe Photoshop. Strong healthcare services professional with a UX/UI Design
+            bootcamp focused in UX/UI Design from University of Toronto.
+          </div>
+        </div>
+      </div>
+      <div class="component-27-152-C61RwL" id="component-27-152">
+        <div class="component-2-1-sNIG4H">
+          <div class="group-1-aB8BHe">
+            <div class="david-habil-mVghdk hoeflertext-regular-normal-cello-180px">David Habil</div>
+            <div class="ux-ui-designer-mVghdk">UX / UI Designer</div>
+          </div>
+        </div>
+        <div class="component-5-1-sNIG4H">
+          <div class="product-uxui-de-problem-solver-FTGx8j hoeflertext-normal-cello-35px">
+            <span class="span0-LP5oGx">Product U</span><span class="span1-LP5oGx">X</span
+            ><span class="span2-LP5oGx">/</span><span class="span3-LP5oGx">UI</span
+            ><span class="span4-LP5oGx"> Designer , Researcher , Creative Thinker, Problem Solver</span>
+          </div>
+        </div>
+      </div>
+      <div class="component-7-1-C61RwL">
+        <div class="projects-vsdTuv hoeflertext-regular-normal-cello-90px">Projects</div>
+      </div>
+      <img class="component-65-1-C61RwL" src="img/component-65---1-2@1x.png" />
+      <div class="icons8-home-C61RwL"></div>
+      <div class="component-31-1-C61RwL">
+        <div class="software-5bt2w0 hoeflertext-regular-normal-cello-90px">Software</div>
+      </div>
+      <div class="component-81-1-C61RwL">
+        <div class="component-64-1-jXeRjZ">
+          <img class="line-1-UmiDsH" src="img/line-1-2@1x.png" />
+          <div class="component-27-14-UmiDsH">
+            <div class="component-2-1-Bbpwg3">
+              <div class="group-1-EtY3UW">
+                <div class="david-habil-56cpiT hoeflertext-regular-normal-cello-90px">David Habil</div>
+                <div class="ux-ui-designer-56cpiT">UX / UI Designer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="component-80-2-jXeRjZ">
+          <div class="email-davidayadnagubgmailcom-y9OAt8 hoeflertext-normal-cello-30px">
+            <span class="span0-kAUmrs">Email: </span><span class="span1-kAUmrs">David.ayad.nagub@gmail.com</span>
+          </div>
+          <div class="cell-647-517-1700-y9OAt8 hoeflertext-normal-cello-30px">
+            <span class="span0-Nmkvvm">Cell: </span><span class="span1-Nmkvvm">(647) 517-1700</span>
+          </div>
+          <div class="linkedin-httpsw-omindavid-habil-y9OAt8">
+            <span class="span0-WcSNev">Linkedin: </span
+            ><span class="span1-WcSNev">https://www.linkedin.com/in/david-habil/</span>
+          </div>
+        </div>
+      </div>
+      <a href="#component-27-152">
+        <div class="component-84-1-C61RwL smart-layers-pointers">
+          <img class="path-48-GZ7XPZ" src="img/path-48-1@1x.png" />
+          <img class="path-47-GZ7XPZ" src="img/path-47-1@1x.png" />
+          <img class="path-50-GZ7XPZ" src="img/path-50-1@1x.png" />
+          <img class="path-51-GZ7XPZ" src="img/path-50-1@1x.png" /></div
+      ></a>
+      <div class="humburger-menu-C61RwL">
+        <div class="group-4-xLjche">
+          <img class="path-1-UaXTys" src="img/path-1-1@1x.png" />
+          <img class="path-1-HZqMCa" src="img/path-1-1@1x.png" />
+          <img class="path-1-com63Q" src="img/path-1-2@1x.png" />
+        </div>
+      </div>
+    </div>
+    <div class="home-page-1-6 screen smart-layers-pointers">
+      <div class="david-C61RwL"></div>
+      <div class="repeat-grid-1-C61RwL smart-layers-pointers">
+        <div class="x03-mrdmCX"><img class="path-2-hTnGo5" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1104-mrdmCX"><img class="path-2-xOlKpz" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2104-mrdmCX"><img class="path-2-tSeNwF" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3103-mrdmCX"><img class="path-2-IzfoLp" src="img/path-2-1000@1x.png" /></div>
+        <div class="x414-mrdmCX"><img class="path-2-SvbmOL" src="img/path-2-1000@1x.png" /></div>
+        <div class="x514-mrdmCX"><img class="path-2-tzJJql" src="img/path-2-1000@1x.png" /></div>
+        <div class="x614-mrdmCX"><img class="path-2-tCOH8n" src="img/path-2-1000@1x.png" /></div>
+        <div class="x714-mrdmCX"><img class="path-2-ta94HK" src="img/path-2-1000@1x.png" /></div>
+        <div class="x814-mrdmCX"><img class="path-2-EtAEvW" src="img/path-2-1000@1x.png" /></div>
+        <div class="x914-mrdmCX"><img class="path-2-vApxxN" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1014-mrdmCX"><img class="path-2-XpLrfG" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1114-mrdmCX"><img class="path-2-hdZ5pZ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1214-mrdmCX"><img class="path-2-THII2P" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1314-mrdmCX"><img class="path-2-OZxwLN" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1414-mrdmCX"><img class="path-2-xqTVpN" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1514-mrdmCX"><img class="path-2-cnOyQI" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1614-mrdmCX"><img class="path-2-IK93Iq" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1714-mrdmCX"><img class="path-2-9NnHal" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1814-mrdmCX"><img class="path-2-5poKSk" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1914-mrdmCX"><img class="path-2-q0zV7y" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2014-mrdmCX"><img class="path-2-csmQ4b" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2114-mrdmCX"><img class="path-2-BuL2ud" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2214-mrdmCX"><img class="path-2-0oRTmP" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2314-mrdmCX"><img class="path-2-RfeLH4" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2414-mrdmCX"><img class="path-2-ACr9Rg" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2514-mrdmCX"><img class="path-2-pOqW72" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2614-mrdmCX"><img class="path-2-owP3FO" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2713-mrdmCX"><img class="path-2-6rQJFE" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2813-mrdmCX"><img class="path-2-FRgp6s" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2913-mrdmCX"><img class="path-2-xCCZx8" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3013-mrdmCX"><img class="path-2-zv1Gg5" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3113-mrdmCX"><img class="path-2-pMhfBr" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3213-mrdmCX"><img class="path-2-rxlt85" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3313-mrdmCX"><img class="path-2-upBumN" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3413-mrdmCX"><img class="path-2-f9zMZm" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3513-mrdmCX"><img class="path-2-G5oaYx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3613-mrdmCX"><img class="path-2-c3CJuX" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3713-mrdmCX"><img class="path-2-gbs9j3" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3812-mrdmCX"><img class="path-2-s7AXhq" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3912-mrdmCX"><img class="path-2-hqcpfQ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x407-mrdmCX"><img class="path-2-6ew4RF" src="img/path-2-1000@1x.png" /></div>
+        <div class="x415-mrdmCX"><img class="path-2-cqO9XQ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x423-mrdmCX"><img class="path-2-uTBtww" src="img/path-2-1000@1x.png" /></div>
+        <div class="x433-mrdmCX"><img class="path-2-kuVq7i" src="img/path-2-1000@1x.png" /></div>
+        <div class="x443-mrdmCX"><img class="path-2-yM54VV" src="img/path-2-1000@1x.png" /></div>
+        <div class="x453-mrdmCX"><img class="path-2-s8KxxN" src="img/path-2-1000@1x.png" /></div>
+        <div class="x463-mrdmCX"><img class="path-2-0ZL3DH" src="img/path-2-1000@1x.png" /></div>
+        <div class="x473-mrdmCX"><img class="path-2-0BXZGl" src="img/path-2-1000@1x.png" /></div>
+        <div class="x483-mrdmCX"><img class="path-2-J64IWx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x493-mrdmCX"><img class="path-2-bwxhgb" src="img/path-2-1000@1x.png" /></div>
+        <div class="x503-mrdmCX"><img class="path-2-KnWlfx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x515-mrdmCX"><img class="path-2-WITLMw" src="img/path-2-1000@1x.png" /></div>
+        <div class="x523-mrdmCX"><img class="path-2-yA3GiH" src="img/path-2-1000@1x.png" /></div>
+        <div class="x533-mrdmCX"><img class="path-2-kpOQz6" src="img/path-2-1000@1x.png" /></div>
+        <div class="x543-mrdmCX"><img class="path-2-6dXlO3" src="img/path-2-1000@1x.png" /></div>
+        <div class="x553-mrdmCX"><img class="path-2-r32kvf" src="img/path-2-1000@1x.png" /></div>
+        <div class="x563-mrdmCX"><img class="path-2-9iLWq0" src="img/path-2-1000@1x.png" /></div>
+        <div class="x573-mrdmCX"><img class="path-2-xuTFK3" src="img/path-2-1000@1x.png" /></div>
+        <div class="x583-mrdmCX"><img class="path-2-zHqETM" src="img/path-2-1000@1x.png" /></div>
+        <div class="x593-mrdmCX"><img class="path-2-skZp0x" src="img/path-2-1000@1x.png" /></div>
+        <div class="x603-mrdmCX"><img class="path-2-U0ki43" src="img/path-2-1000@1x.png" /></div>
+        <div class="x615-mrdmCX"><img class="path-2-r8p0Gc" src="img/path-2-1000@1x.png" /></div>
+        <div class="x623-mrdmCX"><img class="path-2-tayHNk" src="img/path-2-1000@1x.png" /></div>
+        <div class="x633-mrdmCX"><img class="path-2-5L2I5t" src="img/path-2-1000@1x.png" /></div>
+        <div class="x643-mrdmCX"><img class="path-2-Lusxqx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x653-mrdmCX"><img class="path-2-mwuqqU" src="img/path-2-1000@1x.png" /></div>
+        <div class="x663-mrdmCX"><img class="path-2-eHefuG" src="img/path-2-1000@1x.png" /></div>
+        <div class="x673-mrdmCX"><img class="path-2-KALLG3" src="img/path-2-1000@1x.png" /></div>
+        <div class="x683-mrdmCX"><img class="path-2-jxoC4Y" src="img/path-2-1000@1x.png" /></div>
+        <div class="x693-mrdmCX"><img class="path-2-YDTDQ3" src="img/path-2-1000@1x.png" /></div>
+        <div class="x703-mrdmCX"><img class="path-2-UUvRcZ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x715-mrdmCX"><img class="path-2-wVjs3z" src="img/path-2-1000@1x.png" /></div>
+        <div class="x723-mrdmCX"><img class="path-2-0hSFKZ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x733-mrdmCX"><img class="path-2-BGoH9s" src="img/path-2-1000@1x.png" /></div>
+        <div class="x743-mrdmCX"><img class="path-2-QPTNVz" src="img/path-2-1000@1x.png" /></div>
+        <div class="x753-mrdmCX"><img class="path-2-GaShwx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x763-mrdmCX"><img class="path-2-ecxJAv" src="img/path-2-1000@1x.png" /></div>
+        <div class="x773-mrdmCX"><img class="path-2-egtBsP" src="img/path-2-1000@1x.png" /></div>
+        <div class="x783-mrdmCX"><img class="path-2-S23dxD" src="img/path-2-1000@1x.png" /></div>
+        <div class="x793-mrdmCX"><img class="path-2-V04rbi" src="img/path-2-1000@1x.png" /></div>
+        <div class="x803-mrdmCX"><img class="path-2-9vEBJy" src="img/path-2-1000@1x.png" /></div>
+      </div>
+      <div class="component-5-2-C61RwL">
+        <div class="e-plan-mobile-a-aily-activities-K2UgDK">
+          <span class="span0-OGpy8v">E-plan Mobile App:</span><span class="span1-OGpy8v"> ​<br /><br /></span
+          ><span class="span2-OGpy8v"
+            >A part of a group project to design or to add a new feature to an existing app. E-plan is new designed app
+            based on user research methodology to help people manage and plan daily activities</span
+          >
+        </div>
+      </div>
+      <div class="component-8-1-C61RwL border-1px-dove-gray"><div class="e-plan-78wuxl">E-Plan</div></div>
+      <div class="component-8-4-C61RwL border-1px-dove-gray"><div class="x-case-study-4hGSDg">Case Study</div></div>
+      <div class="component-30-1-C61RwL">
+        <div class="component-4-1-MuOFaI">
+          <div class="about-me-JPJPd2 hoeflertext-regular-normal-cello-40px">About me</div>
+        </div>
+        <div class="component-3-1-MuOFaI">
+          <div class="experienced-in-adobe-photoshop-JjZzcG">
+            Experienced in Customer service with a demonstrated history of working in the retail industry. Skilled in
+            User Experience (UX), User Interface Design, User Research, XD, Figma App, Miro, GitHub, VS-code, Html, CSS,
+            Javascript, Trello, and Adobe Photoshop. Strong healthcare services professional with a UX/UI Design
+            bootcamp focused in UX/UI Design from University of Toronto.
+          </div>
+        </div>
+      </div>
+      <div class="component-27-15-C61RwL">
+        <div class="component-2-1-ycEMSB">
+          <div class="group-1-dovjhl">
+            <div class="david-habil-W3zspV hoeflertext-regular-normal-cello-40px">David Habil</div>
+            <div class="ux-ui-designer-W3zspV">UX / UI Designer</div>
+          </div>
+        </div>
+        <div class="component-5-1-ycEMSB">
+          <div class="product-uxui-de-problem-solver-xTgakm">
+            <span class="span0-g9S5xS">Product U</span><span class="span1-g9S5xS">X</span
+            ><span class="span2-g9S5xS">/</span><span class="span3-g9S5xS">UI</span
+            ><span class="span4-g9S5xS"> Designer , Researcher , Creative Thinker, Problem Solver</span>
+          </div>
+        </div>
+      </div>
+      <div class="component-7-1-C61RwL">
+        <div class="projects-vsdTuv hoeflertext-regular-normal-cello-40px">Projects</div>
+      </div>
+      <div class="icons8-home-C61RwL"><img class="path-44-KXrxk3" src="img/path-44-3@1x.png" /></div>
+      <div class="component-31-1-C61RwL">
+        <div class="software-5bt2w0 hoeflertext-regular-normal-cello-40px">Software</div>
+      </div>
+      <div class="humburger-menu-C61RwL">
+        <div class="group-4-xLjche">
+          <img class="path-1-UaXTys" src="img/path-1-10@1x.png" />
+          <img class="path-1-HZqMCa" src="img/path-1-10@1x.png" />
+          <img class="path-1-com63Q" src="img/path-1-10@1x.png" />
+        </div>
+      </div>
+      <img class="group-5-C61RwL" src="img/group-5@1x.png" />
+      <div class="component-33-1-C61RwL">
+        <div class="rotato-snapshot-wNNOps"></div>
+        <div class="rotato-snapshot-2-wNNOps">
+          <div class="rotato-snapshot-2-Y3rZpU"></div>
+        </div>
+        <img class="rotato-snapshot-4-wNNOps" src="img/rotato-snapshot-4-4@1x.png" />
+        <div class="rotato-snapshot-6-wNNOps">
+          <div class="rotato-snapshot-6-pA84sW"></div>
+        </div>
+      </div>
+      <div class="component-81-1-C61RwL">
+        <div class="component-64-1-jXeRjZ">
+          <img class="line-1-UmiDsH" src="img/line-1-3@1x.png" />
+          <div class="component-27-14-UmiDsH">
+            <div class="component-2-1-Bbpwg3">
+              <div class="group-1-EtY3UW">
+                <div class="david-habil-56cpiT">David Habil</div>
+                <div class="ux-ui-designer-56cpiT">UX / UI Designer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="component-80-2-jXeRjZ">
+          <div class="email-davidayadnagubgmailcom-y9OAt8 hoeflertext-normal-cello-15px">
+            <span class="span0-kAUmrs">Email: </span><span class="span1-kAUmrs">David.ayad.nagub@gmail.com</span>
+          </div>
+          <div class="cell-647-517-1700-y9OAt8 hoeflertext-normal-cello-15px">
+            <span class="span0-Nmkvvm">Cell: </span><span class="span1-Nmkvvm">(647) 517-1700</span>
+          </div>
+          <div class="linkedin-httpsw-omindavid-habil-y9OAt8 hoeflertext-normal-cello-15px">
+            <span class="span0-WcSNev">Linkedin: </span
+            ><span class="span1-WcSNev">https://www.linkedin.com/in/david-habil/</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home-page-1-5 screen smart-layers-pointers">
+      <div class="david-C61RwL"></div>
+      <div class="repeat-grid-1-C61RwL smart-layers-pointers">
+        <div class="x04-mrdmCX"><img class="path-2-7Ax6EA" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1105-mrdmCX"><img class="path-2-9tut6U" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2105-mrdmCX"><img class="path-2-qLZVBl" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3104-mrdmCX"><img class="path-2-THfs6v" src="img/path-2-1000@1x.png" /></div>
+        <div class="x416-mrdmCX"><img class="path-2-eOU1J9" src="img/path-2-1000@1x.png" /></div>
+        <div class="x516-mrdmCX"><img class="path-2-rHjmaj" src="img/path-2-1000@1x.png" /></div>
+        <div class="x616-mrdmCX"><img class="path-2-Cle4mQ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x716-mrdmCX"><img class="path-2-8wPDIf" src="img/path-2-1000@1x.png" /></div>
+        <div class="x815-mrdmCX"><img class="path-2-zwctrf" src="img/path-2-1000@1x.png" /></div>
+        <div class="x915-mrdmCX"><img class="path-2-rX3j3a" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1015-mrdmCX"><img class="path-2-WmLgtu" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1115-mrdmCX"><img class="path-2-qj4HQc" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1215-mrdmCX"><img class="path-2-3QHxkx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1315-mrdmCX"><img class="path-2-jucmXM" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1415-mrdmCX"><img class="path-2-F0vN50" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1515-mrdmCX"><img class="path-2-Zwib5r" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1615-mrdmCX"><img class="path-2-ZThyTE" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1715-mrdmCX"><img class="path-2-usF4hc" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1815-mrdmCX"><img class="path-2-lvDb1y" src="img/path-2-1000@1x.png" /></div>
+        <div class="x1915-mrdmCX"><img class="path-2-K972vD" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2015-mrdmCX"><img class="path-2-DZvhPg" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2115-mrdmCX"><img class="path-2-g1KTfo" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2215-mrdmCX"><img class="path-2-xcB6vA" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2315-mrdmCX"><img class="path-2-wUsS1L" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2415-mrdmCX"><img class="path-2-gZEzq6" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2515-mrdmCX"><img class="path-2-pctBF5" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2615-mrdmCX"><img class="path-2-wNg53I" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2714-mrdmCX"><img class="path-2-gBq03x" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2814-mrdmCX"><img class="path-2-zrh8bb" src="img/path-2-1000@1x.png" /></div>
+        <div class="x2914-mrdmCX"><img class="path-2-da1YGV" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3014-mrdmCX"><img class="path-2-U6ji39" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3114-mrdmCX"><img class="path-2-bIwonX" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3214-mrdmCX"><img class="path-2-nXilfF" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3314-mrdmCX"><img class="path-2-vxXera" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3414-mrdmCX"><img class="path-2-sh9u5n" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3514-mrdmCX"><img class="path-2-V5MezP" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3614-mrdmCX"><img class="path-2-ORvLfj" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3714-mrdmCX"><img class="path-2-p1ECIa" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3813-mrdmCX"><img class="path-2-josyxg" src="img/path-2-1000@1x.png" /></div>
+        <div class="x3913-mrdmCX"><img class="path-2-GyznU9" src="img/path-2-1000@1x.png" /></div>
+        <div class="x408-mrdmCX"><img class="path-2-xxXo6W" src="img/path-2-1000@1x.png" /></div>
+        <div class="x417-mrdmCX"><img class="path-2-dxlXDr" src="img/path-2-1000@1x.png" /></div>
+        <div class="x424-mrdmCX"><img class="path-2-QazJcD" src="img/path-2-1000@1x.png" /></div>
+        <div class="x434-mrdmCX"><img class="path-2-grjHB5" src="img/path-2-1000@1x.png" /></div>
+        <div class="x444-mrdmCX"><img class="path-2-y87SXp" src="img/path-2-1000@1x.png" /></div>
+        <div class="x454-mrdmCX"><img class="path-2-nKCifx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x464-mrdmCX"><img class="path-2-rXJpg9" src="img/path-2-1000@1x.png" /></div>
+        <div class="x474-mrdmCX"><img class="path-2-C2TVfx" src="img/path-2-1000@1x.png" /></div>
+        <div class="x484-mrdmCX"><img class="path-2-YO08vn" src="img/path-2-1000@1x.png" /></div>
+        <div class="x494-mrdmCX"><img class="path-2-Epxyos" src="img/path-2-1000@1x.png" /></div>
+        <div class="x504-mrdmCX"><img class="path-2-Gs3Crn" src="img/path-2-1000@1x.png" /></div>
+        <div class="x517-mrdmCX"><img class="path-2-bSj7fR" src="img/path-2-1000@1x.png" /></div>
+        <div class="x524-mrdmCX"><img class="path-2-AZ4PGO" src="img/path-2-1000@1x.png" /></div>
+        <div class="x534-mrdmCX"><img class="path-2-8tf9Fk" src="img/path-2-1000@1x.png" /></div>
+        <div class="x544-mrdmCX"><img class="path-2-h5a7x4" src="img/path-2-1000@1x.png" /></div>
+        <div class="x554-mrdmCX"><img class="path-2-H6hnsJ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x564-mrdmCX"><img class="path-2-pOc5H0" src="img/path-2-1000@1x.png" /></div>
+        <div class="x574-mrdmCX"><img class="path-2-R4MmnR" src="img/path-2-1000@1x.png" /></div>
+        <div class="x584-mrdmCX"><img class="path-2-Kd14ey" src="img/path-2-1000@1x.png" /></div>
+        <div class="x594-mrdmCX"><img class="path-2-0npCzo" src="img/path-2-1000@1x.png" /></div>
+        <div class="x604-mrdmCX"><img class="path-2-lreCWk" src="img/path-2-1000@1x.png" /></div>
+        <div class="x617-mrdmCX"><img class="path-2-eE5BcW" src="img/path-2-1000@1x.png" /></div>
+        <div class="x624-mrdmCX"><img class="path-2-yYruHe" src="img/path-2-1000@1x.png" /></div>
+        <div class="x634-mrdmCX"><img class="path-2-2fhhEB" src="img/path-2-1000@1x.png" /></div>
+        <div class="x644-mrdmCX"><img class="path-2-SSNFa4" src="img/path-2-1000@1x.png" /></div>
+        <div class="x654-mrdmCX"><img class="path-2-2ULINg" src="img/path-2-1000@1x.png" /></div>
+        <div class="x664-mrdmCX"><img class="path-2-1fj772" src="img/path-2-1000@1x.png" /></div>
+        <div class="x674-mrdmCX"><img class="path-2-rAQKR6" src="img/path-2-1000@1x.png" /></div>
+        <div class="x684-mrdmCX"><img class="path-2-xjvn7V" src="img/path-2-1000@1x.png" /></div>
+        <div class="x694-mrdmCX"><img class="path-2-JEyhmj" src="img/path-2-1000@1x.png" /></div>
+        <div class="x704-mrdmCX"><img class="path-2-dqGhzC" src="img/path-2-1000@1x.png" /></div>
+        <div class="x717-mrdmCX"><img class="path-2-59aeMb" src="img/path-2-1000@1x.png" /></div>
+        <div class="x724-mrdmCX"><img class="path-2-S6eeeg" src="img/path-2-1000@1x.png" /></div>
+        <div class="x734-mrdmCX"><img class="path-2-gDt2Kg" src="img/path-2-1000@1x.png" /></div>
+        <div class="x744-mrdmCX"><img class="path-2-UFPkM4" src="img/path-2-1000@1x.png" /></div>
+        <div class="x754-mrdmCX"><img class="path-2-Co5RCZ" src="img/path-2-1000@1x.png" /></div>
+        <div class="x764-mrdmCX"><img class="path-2-xXjxwW" src="img/path-2-1000@1x.png" /></div>
+        <div class="x774-mrdmCX"><img class="path-2-dwYpDi" src="img/path-2-1000@1x.png" /></div>
+        <div class="x784-mrdmCX"><img class="path-2-xGdj1C" src="img/path-2-1000@1x.png" /></div>
+        <div class="x794-mrdmCX"><img class="path-2-LkPKP4" src="img/path-2-1000@1x.png" /></div>
+        <div class="x804-mrdmCX"><img class="path-2-nr2aMg" src="img/path-2-1000@1x.png" /></div>
+      </div>
+      <div class="component-5-2-C61RwL">
+        <div class="e-plan-mobile-a-aily-activities-K2UgDK">
+          <span class="span0-OGpy8v">E-plan Mobile App:</span><span class="span1-OGpy8v"> ​<br /><br /></span
+          ><span class="span2-OGpy8v"
+            >A part of a group project to design or to add a new feature to an existing app. E-plan is new designed app
+            based on user research methodology to help people manage and plan daily activities</span
+          >
+        </div>
+      </div>
+      <div class="component-8-1-C61RwL border-1px-dove-gray"><div class="e-plan-78wuxl">E-Plan</div></div>
+      <div class="component-8-4-C61RwL border-1px-dove-gray"><div class="x-case-study-4hGSDg">Case Study</div></div>
+      <div class="component-30-1-C61RwL">
+        <div class="component-4-1-MuOFaI">
+          <div class="about-me-JPJPd2 hoeflertext-regular-normal-cello-40px">About me</div>
+        </div>
+        <div class="component-3-1-MuOFaI">
+          <div class="experienced-in-adobe-photoshop-JjZzcG">
+            Experienced in Customer service with a demonstrated history of working in the retail industry. Skilled in
+            User Experience (UX), User Interface Design, User Research, XD, Figma App, Miro, GitHub, VS-code, Html, CSS,
+            Javascript, Trello, and Adobe Photoshop. Strong healthcare services professional with a UX/UI Design
+            bootcamp focused in UX/UI Design from University of Toronto.
+          </div>
+        </div>
+      </div>
+      <div class="component-27-15-C61RwL">
+        <div class="component-2-1-ycEMSB">
+          <div class="group-1-dovjhl">
+            <div class="david-habil-W3zspV hoeflertext-regular-normal-cello-40px">David Habil</div>
+            <div class="ux-ui-designer-W3zspV">UX / UI Designer</div>
+          </div>
+        </div>
+        <div class="component-5-1-ycEMSB">
+          <div class="product-uxui-de-problem-solver-xTgakm">
+            <span class="span0-g9S5xS">Product U</span><span class="span1-g9S5xS">X</span
+            ><span class="span2-g9S5xS">/</span><span class="span3-g9S5xS">UI</span
+            ><span class="span4-g9S5xS"> Designer , Researcher , Creative Thinker, Problem Solver</span>
+          </div>
+        </div>
+      </div>
+      <div class="component-7-1-C61RwL">
+        <div class="projects-vsdTuv hoeflertext-regular-normal-cello-40px">Projects</div>
+      </div>
+      <div class="icons8-home-C61RwL"><img class="path-44-KXrxk3" src="img/path-44-3@1x.png" /></div>
+      <div class="component-31-1-C61RwL">
+        <div class="software-5bt2w0 hoeflertext-regular-normal-cello-40px">Software</div>
+      </div>
+      <div class="humburger-menu-C61RwL">
+        <div class="group-4-xLjche">
+          <img class="path-1-UaXTys" src="img/path-1-10@1x.png" />
+          <img class="path-1-HZqMCa" src="img/path-1-10@1x.png" />
+          <img class="path-1-com63Q" src="img/path-1-10@1x.png" />
+        </div>
+      </div>
+      <img class="group-5-C61RwL" src="img/group-5-1@1x.png" />
+      <div class="component-33-1-C61RwL">
+        <div class="rotato-snapshot-wNNOps">
+          <img class="rotato-snapshot-iVgOVn" src="img/rotato-snapshot-7@1x.png" />
+        </div>
+        <div class="rotato-snapshot-2-wNNOps">
+          <div class="rotato-snapshot-2-Y3rZpU">
+            <img class="rotato-snapshot-2-B5stlr" src="img/rotato-snapshot-2-4@1x.png" />
+          </div>
+        </div>
+        <img class="rotato-snapshot-4-wNNOps" src="img/rotato-snapshot-4-4@1x.png" />
+        <div class="rotato-snapshot-6-wNNOps">
+          <div class="rotato-snapshot-6-pA84sW">
+            <img class="rotato-snapshot-6-pyN0MH" src="img/rotato-snapshot-6-4@1x.png" />
+          </div>
+        </div>
+      </div>
+      <div class="component-81-1-C61RwL">
+        <div class="component-64-1-jXeRjZ">
+          <img class="line-1-UmiDsH" src="img/line-1-4@1x.png" />
+          <div class="component-27-14-UmiDsH">
+            <div class="component-2-1-Bbpwg3">
+              <div class="group-1-EtY3UW">
+                <div class="david-habil-56cpiT">David Habil</div>
+                <div class="ux-ui-designer-56cpiT">UX / UI Designer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="component-80-2-jXeRjZ">
+          <div class="email-davidayadnagubgmailcom-y9OAt8 hoeflertext-normal-cello-15px">
+            <span class="span0-kAUmrs">Email: </span><span class="span1-kAUmrs">David.ayad.nagub@gmail.com</span>
+          </div>
+          <div class="cell-647-517-1700-y9OAt8 hoeflertext-normal-cello-15px">
+            <span class="span0-Nmkvvm">Cell: </span><span class="span1-Nmkvvm">(647) 517-1700</span>
+          </div>
+          <div class="linkedin-httpsw-omindavid-habil-y9OAt8 hoeflertext-normal-cello-15px">
+            <span class="span0-WcSNev">Linkedin: </span
+            ><span class="span1-WcSNev">https://www.linkedin.com/in/david-habil/</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function ShowOnScroll() {
+        this.toShow = [];
+        this.nextEventY = undefined;
+      }
+
+      ShowOnScroll.prototype.show = function (e) {
+        e.style.display = "";
+      };
+
+      ShowOnScroll.prototype.hide = function (e) {
+        e.style.display = "none";
+      };
+
+      ShowOnScroll.prototype.getTop = function (e) {
+        if (e.Top != undefined && e.Top != 0) {
+          return e.Top;
+        }
+        var top = 0;
+        var iter = e;
+        do {
+          top += iter.offsetTop || 0;
+          iter = iter.offsetParent;
+        } while (iter);
+        e.Top = top;
+        return top;
+      };
+
+      ShowOnScroll.prototype.onScroll = function () {
+        var screenBottom = window.pageYOffset + window.innerHeight;
+        if (this.nextEventY == undefined || this.nextEventY > screenBottom) {
+          return;
+        }
+        this.nextEventY = undefined;
+        for (var i = 0; i < this.toShow.length; i++) {
+          var e = this.toShow[i];
+          var top = this.getTop(e);
+          if (top < screenBottom) {
+            this.show(e);
+            this.toShow.shift();
+            i--;
+          } else {
+            this.nextEventY = top;
+            break;
+          }
+        }
+      };
+
+      ShowOnScroll.prototype.resetScrolling = function () {
+        // Clear state
+        var screenBottom = window.pageYOffset + window.innerHeight;
+        for (var i = 0; i < this.toShow.length; i++) {
+          var e = this.toShow[i];
+          this.show(e);
+        }
+        this.toShow = [];
+        this.nextEventY == undefined;
+
+        // Collect items
+        var itemsToShowOnScroll = Array.prototype.slice.call(document.getElementsByTagName("*"));
+        itemsToShowOnScroll = itemsToShowOnScroll.filter(function (e) {
+          return e.getAttribute("show-on-scroll") != undefined;
+        });
+        var getTop = this.getTop;
+        itemsToShowOnScroll.sort(function (a, b) {
+          return getTop(a) - getTop(b);
+        });
+        for (var i = 0; i < itemsToShowOnScroll.length; i++) {
+          var e = itemsToShowOnScroll[i];
+          var top = this.getTop(e);
+          if (top < screenBottom) {
+            continue;
+          }
+          this.toShow.push(e);
+          this.hide(e);
+          this.nextEventY = this.nextEventY != undefined ? this.nextEventY : top;
+        }
+      };
+
+      ShowOnScroll.prototype.handleEvent = function (e) {
+        switch (e.type) {
+          case "scroll":
+            this.onScroll();
+            break;
+          case "resize":
+            this.resetScrolling();
+            break;
+        }
+      };
+
+      ShowOnScroll.prototype.init = function () {
+        this.resetScrolling();
+        window.addEventListener("scroll", this);
+        window.addEventListener("resize", this);
+      };
+
+      // After anima-src
+      setTimeout(function () {
+        var instShowOnScroll = new ShowOnScroll();
+        instShowOnScroll.init();
+      }, 250);
+    </script>
+  </body>
+</html>
